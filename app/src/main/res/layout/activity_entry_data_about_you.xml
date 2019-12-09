@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDataAboutYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dataAboutYou"
+        android:layout_marginTop="30dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Height" />
+
+            <TextView
+                android:id="@+id/tvHeightValue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/weight" />
+
+            <TextView
+                android:id="@+id/tvWeightValue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvBMI"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/BMI" />
+
+            <TextView
+                android:id="@+id/tvBMIValue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnGoToPrograms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/goToPrograms" />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="please_choose_training_program">Please, choose training program</string>
+    <string name="waist">Waist</string>
+    <string name="legs">Legs</string>
+    <string name="complete_selection">Complete selection</string>
+    <string name="simpleLvl">simple</string>
+    <string name="mediumLvl">medium</string>
+    <string name="hardLvl">hard</string>
+    <string name="please_choose_lvl_training">Please, choose lvl training</string>
+    <string name="ok">OK</string>
+    <string name="entry_weight">Please, entry your weight</string>
+    <string name="entry_height">Please, entry your height</string>
+    <string name="weight">Weight</string>
+    <string name="Height">Height</string>
+    <string name="BMI">Body mass index</string>
+    <string name="dataAboutYou">You data</string>
+    <string name="goToPrograms">Go to programs</string>
+    <string name="program">Program</string>
+    <string name="lvl">Lvl</string>
+    <string name="progress">Progress</string>
+    <string name="choosedTrainingPrograms">Choosed training programs</string>
+    <string name="day">Day</string>
+    <string name="startName">Start train</string>
+
+</resources>

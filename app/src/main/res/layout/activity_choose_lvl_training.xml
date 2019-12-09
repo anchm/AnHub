@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutChooseLvl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ChooseLvl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/please_choose_lvl_training" />
+
+    <Button
+        android:id="@+id/btnSimpleLvl"
+        style="@style/buttonChooseLvl"
+        android:text="@string/simpleLvl" />
+
+    <Button
+        android:id="@+id/btnMediumLvl"
+        style="@style/buttonChooseLvl"
+        android:text="@string/mediumLvl" />
+
+    <Button
+        android:id="@+id/btnHardLvl"
+        style="@style/buttonChooseLvl"
+        android:text="@string/hardLvl" />
+
+    <Button
+        android:id="@+id/btnSelectLvlTrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/ok" />
+
+</LinearLayout>

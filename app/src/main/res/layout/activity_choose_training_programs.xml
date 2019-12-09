@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:background="@drawable/background_choose_program">
+
+    <TextView
+            android:id="@+id/ChooseTrainingProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30dp"
+            android:text="@string/please_choose_training_program" />
+
+    <LinearLayout
+        android:id="@+id/layoutBottomChoseProgram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChooseTrainingProgram"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnWaist"
+            style="@style/buttonChooseProgram"
+            android:text="@string/waist" />
+
+        <Button
+            android:id="@+id/btnLegs"
+            style="@style/buttonChooseProgram"
+            android:text="@string/legs" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/button_choose_program_background"
+            android:alpha="0.7"
+            android:text="@string/complete_selection" />
+    </LinearLayout>
+
+</RelativeLayout>
