@@ -1,61 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".ControllerExercises">
-
-    <TextView
-        android:id="@+id/tvCurrentState"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Get ready!" />
+    tools:context=".ControllerExercises"
+    android:background="@drawable/background_relaxation">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:id="@+id/layoutTextCurrentState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp">
+
+            <TextView
+                android:id="@+id/tvCurrentState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Get ready!"
+                android:textSize="50sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:orientation="vertical"
-        android:layout_marginTop="100dp"
-        android:gravity="center_horizontal">
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/layoutTextCurrentState"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <ProgressBar
+            android:id="@+id/pbRelaxation"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/progress_bar_drawable"
+            android:alpha="0.8"/>
 
         <TextView
             android:id="@+id/tvCountDownTimerRelaxation"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="" />
-
-        <ProgressBar
-            android:id="@+id/pbRelaxation"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-    </LinearLayout>
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="105dp"
-        android:orientation="vertical">
+        android:layout_height="125dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_pressed"
+        android:alpha="0.6">
 
-        <TextView
-            android:id="@+id/tvNameNextExercise"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="3">
 
-        <TextView
-            android:id="@+id/tvCountRepeatNextExercise"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="" />
+                <TextView
+                    android:id="@+id/tvNameNextExercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="30sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvCountRepeatNextExercise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:id="@+id/tvMetricsNextExercise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/ivNextExercise"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:civ_border_color="#8B4513"
+                app:civ_border_width="2dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="2"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
-</LinearLayout>
+</RelativeLayout>

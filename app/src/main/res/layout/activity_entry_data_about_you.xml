@@ -1,82 +1,97 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:background="@drawable/background_cat">
 
     <TextView
         android:id="@+id/tvDataAboutYou"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/dataAboutYou"
-        android:layout_marginTop="30dp"/>
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/tableLayoutDataAboutYou"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
+        android:layout_below="@+id/tvDataAboutYou"
+        android:layout_marginTop="39dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="*">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/tvHeight"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                style="@style/textViewDataAboutYou"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
                 android:text="@string/Height" />
 
             <TextView
                 android:id="@+id/tvHeightValue"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:text=""/>
+                style="@style/textViewDataAboutYouValue"
+                android:text="0" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
 
             <TextView
                 android:id="@+id/tvWeight"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                style="@style/textViewDataAboutYou"
                 android:text="@string/weight" />
 
             <TextView
                 android:id="@+id/tvWeightValue"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:text=""/>
+                style="@style/textViewDataAboutYouValue"
+                android:text="0" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
 
             <TextView
                 android:id="@+id/tvBMI"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                style="@style/textViewDataAboutYou"
                 android:text="@string/BMI" />
 
             <TextView
                 android:id="@+id/tvBMIValue"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:text=""/>
+                style="@style/textViewDataAboutYouValue"
+                android:text="0" />
 
         </TableRow>
     </TableLayout>
 
-    <Button
-        android:id="@+id/btnGoToPrograms"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/goToPrograms" />
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnGoToPrograms"
+            android:layout_width="160dp"
+            android:layout_height="72dp"
+            android:alpha="0.8"
+            android:background="@drawable/button_not_pressed"
+            android:text="@string/goToPrograms" />
+    </LinearLayout>
+
+</RelativeLayout>

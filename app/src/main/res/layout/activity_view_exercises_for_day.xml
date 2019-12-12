@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@drawable/background_cat"
     tools:context=".ViewExercisesForDay">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/layoutViewExercisesForDay"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tvCurrentProgramInExercises"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
             android:text="" />
 
         <TextView
             android:id="@+id/tvCurrentLvlInExercises"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="3"
+            android:textSize="25sp"
             android:text="" />
 
         <TextView
             android:id="@+id/tvCurrentDay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="3"
+            android:textSize="30sp"
             android:text="@string/day" />
 
         <TextView
@@ -39,18 +44,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="30sp"
             android:text="" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnStartTrain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/startName" />
-
     <ListView android:id="@+id/lvExercisesForDay"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutViewExercisesForDay"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnStartTrain"
+            android:layout_width="160dp"
+            android:layout_height="72dp"
+            android:alpha="0.8"
+            android:background="@drawable/button_not_pressed"
+            android:text="@string/startTrain" />
+    </LinearLayout>
+
+</RelativeLayout>

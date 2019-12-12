@@ -21,15 +21,37 @@
         <item name="android:layout_width">200dp</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:background">@drawable/button_choose_program_background</item>
-        <item name="android:layout_marginTop">5dp</item>
-        <item name="android:alpha">0.5</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:alpha">0.75</item>
     </style>
 
     <style name="buttonChooseLvl">
         <item name="android:layout_width">200dp</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:layout_marginTop">5dp</item>
+        <item name="android:alpha">0.6</item>
     </style>
 
+    <style name="textViewDataAboutYou">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@drawable/frame_around_the_image</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="textViewDataAboutYouValue">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@drawable/frame_around_the_image</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="progressBarStyle" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateDrawable">@drawable/progress_bar_drawable</item>
+    </style>
 
 </resources>

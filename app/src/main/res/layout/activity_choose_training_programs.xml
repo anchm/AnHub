@@ -2,26 +2,36 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="50dp"
         android:background="@drawable/background_choose_program">
 
-    <TextView
+
+    <LinearLayout
+        android:id="@+id/layoutTextChooseTrainingProgram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="105dp">
+
+        <TextView
             android:id="@+id/ChooseTrainingProgram"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textSize="30dp"
-            android:text="@string/please_choose_training_program" />
+            android:text="@string/please_choose_training_program"
+            android:textColor="#f2f2f2"
+            android:textSize="38dp" />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/layoutBottomChoseProgram"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ChooseTrainingProgram"
+        android:layout_below="@+id/layoutTextChooseTrainingProgram"
+        android:layout_marginTop="94dp"
         android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/btnWaist"
@@ -32,8 +42,8 @@
             android:id="@+id/btnLegs"
             style="@style/buttonChooseProgram"
             android:text="@string/legs" />
-    </LinearLayout>
 
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,7 +58,7 @@
             android:layout_height="60dp"
             android:layout_marginBottom="60dp"
             android:background="@drawable/button_choose_program_background"
-            android:alpha="0.7"
+            android:alpha="0.75"
             android:text="@string/complete_selection" />
     </LinearLayout>
 

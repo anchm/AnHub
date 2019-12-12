@@ -3,11 +3,14 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import static java.lang.Integer.parseInt;
 
 public class ViewReportExercises extends AppCompatActivity {
 
@@ -29,15 +32,43 @@ public class ViewReportExercises extends AppCompatActivity {
         tvCaloriesBurned = findViewById(R.id.tvCaloriesBurnedValue);
         btnViewReportProgram = findViewById(R.id.btnViewReportProgram);
 
-        tvTimeSpentValue.setText(Integer.toString((int) timeSpent / 1000));
-
         exercises = Exercises.getInstance();
+
+        tvTimeSpentValue.setText(Integer.toString((int) timeSpent / 1000));
+        tvCaloriesBurned.setText(exercises.getCalories());
 
         database = MyDatabase.getInstance().getDatabase();
 
-        String request = "UPDATE daysprograms SET isCompleted = 1 WHERE id = " + exercises.getIdProgram();
+        String request = "SELECT isCompleted FROM daysprograms WHERE id = " + exercises.getIdDay();
+        Cursor cursor = database.rawQuery(request, null);
+        cursor.moveToFirst();
 
-        database.execSQL(request);
+        String newExecuted = new String();
+        if(!cursor.isAfterLast()){
+            newExecuted = cursor.getString(0);
+        }
+        cursor.close();
+
+
+        if(newExecuted.equals("0")) {
+            request = "UPDATE daysprograms SET isCompleted = 1 WHERE id = " + exercises.getIdDay();
+            database.execSQL(request);
+
+            request = "SELECT progress FROM trainingprograms WHERE id = " + exercises.getIdProgram();
+
+            cursor = database.rawQuery(request, null);
+            cursor.moveToFirst();
+
+            String oldProgress = new String();
+            if(!cursor.isAfterLast()){
+                oldProgress = cursor.getString(0);
+            }
+            Integer newProgressValue = Integer.parseInt(oldProgress)+1;
+            String newProgress = newProgressValue.toString();
+
+            request = "UPDATE trainingprograms SET progress = " + newProgress + " WHERE id = " + exercises.getIdProgram();
+            database.execSQL(request);
+        }
 
         final Intent viewReportProgramIntent = new Intent(this, ViewReportProgram.class);
 

@@ -9,10 +9,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
+import android.text.Layout;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
@@ -27,7 +29,7 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
     Button btnWaist;
     Button btnLegs;
     Button btnComplete;
-    LinearLayout layoutChooseLvl;
+    RelativeLayout layoutChooseLvl;
 
     private MyDatabase myDatabase;
 
@@ -81,8 +83,4 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed(){
-
-    }
 }

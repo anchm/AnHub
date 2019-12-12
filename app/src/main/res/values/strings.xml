@@ -7,7 +7,7 @@
     <string name="simpleLvl">simple</string>
     <string name="mediumLvl">medium</string>
     <string name="hardLvl">hard</string>
-    <string name="please_choose_lvl_training">Please, choose lvl training</string>
+    <string name="choose_lvl_training">Please, choose one or more levels training</string>
     <string name="ok">OK</string>
     <string name="entry_weight">Please, entry your weight</string>
     <string name="entry_height">Please, entry your height</string>
@@ -18,9 +18,9 @@
     <string name="goToPrograms">Go to programs</string>
     <string name="program">Program</string>
     <string name="lvl">Lvl</string>
-    <string name="progress">Progress</string>
+    <string name="progress">progress</string>
     <string name="choosedTrainingPrograms">Choosed training programs</string>
     <string name="day">Day</string>
-    <string name="startName">Start train</string>
+    <string name="startTrain">Start train</string>
 
 </resources>

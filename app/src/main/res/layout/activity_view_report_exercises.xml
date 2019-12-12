@@ -1,60 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewReportExercises" >
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_cat">
 
-
-    <TableRow
+    <TextView
+        android:id="@+id/tvDataAboutYou"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:text="Report exercises"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/tvTimeSpent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Time spent" />
-
-        <TextView
-            android:id="@+id/tvTimeSpentValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-    </TableRow>
-
-    <TableRow
+    <TableLayout
+        android:id="@+id/tableLayoutDataAboutYou"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDataAboutYou"
+        android:layout_marginTop="39dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="*">
 
-        <TextView
-            android:id="@+id/tvCaloriesBurned"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Calories burned" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tvCaloriesBurnedValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0" />
+            <TextView
+                android:id="@+id/tvTimeSpent"
+                style="@style/textViewDataAboutYou"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                android:text="Time spent" />
 
-    </TableRow>
+            <TextView
+                android:id="@+id/tvTimeSpentValue"
+                style="@style/textViewDataAboutYouValue"
+                android:text="0" />
 
-    <TableRow
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/tvCaloriesBurned"
+                style="@style/textViewDataAboutYou"
+                android:text="Calories burned" />
+
+            <TextView
+                android:id="@+id/tvCaloriesBurnedValue"
+                style="@style/textViewDataAboutYouValue"
+                android:text="0" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
 
         <Button
             android:id="@+id/btnViewReportProgram"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="170dp"
+            android:layout_height="72dp"
+            android:alpha="0.8"
+            android:background="@drawable/button_not_pressed"
             android:text="View report program" />
-    </TableRow>
+    </LinearLayout>
 
-</TableLayout>
+</RelativeLayout>

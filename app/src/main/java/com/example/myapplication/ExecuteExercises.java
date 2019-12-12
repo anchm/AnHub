@@ -7,10 +7,12 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
@@ -19,7 +21,10 @@ public class ExecuteExercises extends AppCompatActivity {
 
     private TextView tvNameExercise;
     private ImageView ivImageExercise;
-    private TextView tvCountDownTimer;
+    private TextView tvCountDownTimerExecuteExercise;
+    private TextView tvCountRepeatCurrentExercise;
+    private TextView tvMetricsCurrentExercise;
+    private ProgressBar pbExecuteExercise;
 
     private Queue<Exercise> exercises;
 
@@ -32,10 +37,17 @@ public class ExecuteExercises extends AppCompatActivity {
 
         tvNameExercise = findViewById(R.id.tvNameCurrentExercise);
         ivImageExercise = findViewById(R.id.ivImageExercise);
-        tvCountDownTimer = findViewById(R.id.tvCountDownTimer);
+        tvCountDownTimerExecuteExercise = findViewById(R.id.tvCountDownTimerExecuteExercise);
+        pbExecuteExercise = findViewById(R.id.pbExecuteExercise);
+        tvCountRepeatCurrentExercise = findViewById(R.id.tvCountRepeatCurrentExercise);
+        tvMetricsCurrentExercise = findViewById(R.id.tvMetricsCurrentExercise);
 
         Exercise exercise = exercises.poll();
+
         tvNameExercise.setText(exercise.getName());
+        tvCountRepeatCurrentExercise.setText(exercise.getCountRepeat());
+        tvMetricsCurrentExercise.setText(exercise.getMetrics());
+
         String filename = exercise.getImage();
         InputStream inputStream = null;
         try{
@@ -57,11 +69,13 @@ public class ExecuteExercises extends AppCompatActivity {
             }
         }
 
+        pbExecuteExercise.setMax(5);
         new CountDownTimer(5000, 1000) {
 
             public void onTick(long millisUntilFinished) {
-                tvCountDownTimer.setText("Осталось: "
-                        + millisUntilFinished / 1000);
+                int time = new BigDecimal(millisUntilFinished/1000).intValueExact();
+                tvCountDownTimerExecuteExercise.setText("" + time);
+                pbExecuteExercise.setProgress(time);
             }
             public void onFinish() {
                 finish();

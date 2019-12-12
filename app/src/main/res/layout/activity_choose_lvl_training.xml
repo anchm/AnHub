@@ -1,39 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/layoutChooseLvl"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="60dp"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:gravity="center"
+    android:background="@drawable/background_cat">
 
-    <TextView
-        android:id="@+id/ChooseLvl"
+    <LinearLayout
+        android:id="@+id/layoutTextChooseLvlTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/please_choose_lvl_training" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/btnSimpleLvl"
-        style="@style/buttonChooseLvl"
-        android:text="@string/simpleLvl" />
+        <TextView
+            android:id="@+id/ChooseLvl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="@string/choose_lvl_training" />
 
-    <Button
-        android:id="@+id/btnMediumLvl"
-        style="@style/buttonChooseLvl"
-        android:text="@string/mediumLvl" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btnHardLvl"
-        style="@style/buttonChooseLvl"
-        android:text="@string/hardLvl" />
-
-    <Button
-        android:id="@+id/btnSelectLvlTrain"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layoutButtonChooseLvl"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/ok" />
+        android:layout_below="@+id/layoutTextChooseLvlTraining"
+        android:gravity="center"
+        android:orientation="vertical">
 
-</LinearLayout>
+            <Button
+                android:id="@+id/btnSimpleLvl"
+                style="@style/buttonChooseLvl"
+                android:text="@string/simpleLvl" />
+
+            <Button
+                android:id="@+id/btnMediumLvl"
+                style="@style/buttonChooseLvl"
+                android:text="@string/mediumLvl" />
+
+            <Button
+                android:id="@+id/btnHardLvl"
+                style="@style/buttonChooseLvl"
+                android:text="@string/hardLvl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSelectLvlTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@drawable/button_not_pressed"
+            android:text="@string/ok" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ViewChoosedPrograms"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_cat">
 
     <TextView
         android:id="@+id/tvChoosedPrograms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
         android:text="@string/choosedTrainingPrograms"
         android:layout_marginBottom="10dp"
+        android:textStyle="bold"
         android:gravity="center"/>
 
-    <ListView android:id="@+id/lvTrainigPrograms"
+    <ListView android:id="@+id/lvTrainingPrograms"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvChoosedPrograms"/>
 
-</LinearLayout>
+</RelativeLayout>

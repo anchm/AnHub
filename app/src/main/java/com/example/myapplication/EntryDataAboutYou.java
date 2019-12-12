@@ -74,9 +74,4 @@ public class EntryDataAboutYou extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed(){
-
-    }
-
 }

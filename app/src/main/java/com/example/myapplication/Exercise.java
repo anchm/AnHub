@@ -1,9 +1,10 @@
 package com.example.myapplication;
 
 public class Exercise {
-    private String name = "";
+    private String name;
     private String countRepeat;
-    private String image = "";
+    private String image;
+    private String metrics;
 
     public void setName(String name){
         this.name = name;
@@ -17,6 +18,8 @@ public class Exercise {
         this.countRepeat = countRepeat;
     }
 
+    public void setMetrics(String metrics) { this.metrics = metrics; }
+
     public String getName(){
         return name;
     }
@@ -28,5 +31,7 @@ public class Exercise {
     public String getCountRepeat(){
         return countRepeat;
     }
+
+    public String getMetrics() { return metrics; }
 
 }

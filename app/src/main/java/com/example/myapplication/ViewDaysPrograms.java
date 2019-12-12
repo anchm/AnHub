@@ -2,13 +2,20 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
@@ -17,35 +24,30 @@ import java.util.HashMap;
 
 public class ViewDaysPrograms extends AppCompatActivity {
 
-    private MyDatabase myDatabase;
-
     ListView lvDaysPrograms;
     TextView tvCurrentProgram;
     TextView tvCurrentLvl;
+
+    ArrayList<HashMap<String, Object>> days = new ArrayList<>();
+
+    private SQLiteDatabase mDb = MyDatabase.getInstance().getDatabase();
+
+    private final Exercises exercisesClass = Exercises.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_days_programs);
 
-        Bundle arguments = getIntent().getExtras();
-
-        String idProgram = arguments.getString("id");
-        final String program = arguments.getString("program");
-        final String lvl = arguments.getString("lvl");
-
         tvCurrentProgram = findViewById(R.id.tvCurrentProgram);
         tvCurrentLvl = findViewById(R.id.tvCurrentLvl);
 
-        tvCurrentProgram.setText(program);
-        tvCurrentLvl.setText(lvl);
+        tvCurrentProgram.setText(exercisesClass.getNameProgram());
+        tvCurrentLvl.setText(exercisesClass.getLvlProgram());
 
-        myDatabase = MyDatabase.getInstance();
-        SQLiteDatabase mDb = myDatabase.getDatabase();
+        HashMap<String, Object> day;
 
-        ArrayList<HashMap<String, Object>> exercises = new ArrayList<HashMap<String, Object>>();
-
-        HashMap<String, Object> exercise;
+        int idProgram = Integer.parseInt(exercisesClass.getIdProgram());
 
         String sql_request_days_program = String.format("SELECT * FROM daysprograms WHERE program = %s", idProgram);
 
@@ -53,21 +55,21 @@ public class ViewDaysPrograms extends AppCompatActivity {
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()) {
-            exercise = new HashMap<String, Object>();
+            day = new HashMap<String, Object>();
 
-            exercise.put("id", cursor.getString(0));
-            exercise.put("day", cursor.getString(2));
+            day.put("id", cursor.getString(0));
+            day.put("day", cursor.getString(2));
+            day.put("isCompleted", cursor.getString(3));
+            day.put("calories", cursor.getString(4));
 
-            exercises.add(exercise);
+            days.add(day);
 
             cursor.moveToNext();
         }
         cursor.close();
 
-        String[] from = { "id", "day"};
-        int[] to = { R.id.tvIdDayProgram, R.id.tvDayValue};
+        DaysProgramAdapter adapter = new DaysProgramAdapter(this);
 
-        SimpleAdapter adapter = new SimpleAdapter(this, exercises, R.layout.adapter_days_program, from, to);
         lvDaysPrograms = findViewById(R.id.lvDaysPrograms);
         lvDaysPrograms.setAdapter(adapter);
 
@@ -76,17 +78,67 @@ public class ViewDaysPrograms extends AppCompatActivity {
         lvDaysPrograms.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                startActivity(viewExercisesForDayIntent);
+
                 TextView tvIdDayProgram = view.findViewById(R.id.tvIdDayProgram);
                 TextView tvDayValue = view.findViewById(R.id.tvDayValue);
+                TextView tvCalories = view.findViewById(R.id.tvCalories);
 
-                viewExercisesForDayIntent.putExtra("id", tvIdDayProgram.getText().toString());
-                viewExercisesForDayIntent.putExtra("day", tvDayValue.getText().toString());
-                viewExercisesForDayIntent.putExtra("program", program);
-                viewExercisesForDayIntent.putExtra("lvl", lvl);
-
-                startActivity(viewExercisesForDayIntent);
+                exercisesClass.setIdDay(tvIdDayProgram.getText().toString());
+                exercisesClass.setDay(tvDayValue.getText().toString());
+                exercisesClass.setCalories(tvCalories.getText().toString());
             }
         });
 
+    }
+
+    class DaysProgramAdapter extends BaseAdapter {
+        private LayoutInflater mLayoutInflater;
+
+        DaysProgramAdapter(Context context) {
+            mLayoutInflater = LayoutInflater.from(context);
+        }
+
+        @Override
+        public int getCount() {
+            return days.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return position;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = mLayoutInflater.inflate(R.layout.adapter_days_program, null);
+
+            TextView tvIdDayProgram = convertView.findViewById(R.id.tvIdDayProgram);
+            TextView tvDayValue = convertView.findViewById(R.id.tvDayValue);
+            ImageView ivIsCompletedDay = convertView.findViewById(R.id.ivIsCompletedDay);
+            TextView tvCalories = convertView.findViewById(R.id.tvCalories);
+
+            HashMap day = days.get(position);
+
+            tvIdDayProgram.setText(day.get("id").toString());
+            tvDayValue.setText(day.get("day").toString());
+            tvCalories.setText(day.get("calories").toString());
+
+            Drawable isCompletedDrawable;
+            if(Integer.parseInt(day.get("isCompleted").toString()) != 0){
+                isCompletedDrawable = getResources().getDrawable(R.drawable.is_completed);
+            }
+            else isCompletedDrawable = getResources().getDrawable(R.drawable.is_not_completed);
+
+            ivIsCompletedDay.setImageDrawable(isCompletedDrawable);
+
+            return convertView;
+        }
     }
 }

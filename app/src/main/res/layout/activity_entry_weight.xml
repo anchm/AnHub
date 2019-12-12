@@ -1,44 +1,71 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:paddingTop="10dp">
+    android:gravity="center_horizontal">
 
-    <TextView
-        android:id="@+id/tvEntryWeight"
+    <LinearLayout
+        android:id="@+id/layoutTextEntryWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+           <TextView
+                android:id="@+id/tvEntryWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/entry_weight" />
+
+            <EditText
+                android:id="@+id/etEntryWeight"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:inputType="number"
+                android:gravity="center_horizontal"
+                android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTextEntryWeight"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/frame_around_the_image"
+        android:paddingLeft="10dp"
         android:paddingTop="10dp"
-        android:text="@string/entry_weight" />
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp" >
 
-    <EditText
-        android:id="@+id/etEntryWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:inputType="number"
-        android:gravity="center"
-        android:ems="10" />
+        <ImageView
+            android:id="@+id/ivEntryWeight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/scales" />
 
-    <Button
-        android:id="@+id/btnEntryWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ok" />
+    </LinearLayout>
 
-    <ImageView
-        android:id="@+id/ivEntryWeight"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        app:srcCompat="@drawable/scales" />
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
 
+        <Button
+            android:id="@+id/btnEntryWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:background="@drawable/button_not_pressed"/>
+    </LinearLayout>
 
-
-
-</LinearLayout>
+</RelativeLayout>

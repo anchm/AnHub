@@ -36,8 +36,4 @@ public class EntryWeight extends AppCompatActivity {
         btnEntryWeight.setOnClickListener(oclBtnEntryWeight);
     }
 
-    @Override
-    public void onBackPressed(){
-
-    }
 }
