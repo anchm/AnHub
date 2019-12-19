@@ -13,6 +13,8 @@ public class DataAboutYou {
 
     private SharedPreferences spDataAboutYou;
 
+    private static final String FILE_NAME_DATA_ABOUT_YOU = "data_about_yourself";
+
     private DataAboutYou() {
     }
 
@@ -36,7 +38,7 @@ public class DataAboutYou {
     }
 
     public void writeData(Context context){
-        spDataAboutYou = context.getSharedPreferences(EntryDataAboutYou.FILE_NAME_DATA_ABOUT_YOU, Context.MODE_PRIVATE);
+        spDataAboutYou = context.getSharedPreferences(FILE_NAME_DATA_ABOUT_YOU, Context.MODE_PRIVATE);
         SharedPreferences.Editor ed = spDataAboutYou.edit();
         ed.putInt("height", height);
         ed.putInt("weight", weight);

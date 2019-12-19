@@ -2,15 +2,22 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.widget.ImageView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import com.github.mikephil.charting.data.Entry;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ViewReportProgram extends AppCompatActivity {
 
@@ -32,21 +39,32 @@ public class ViewReportProgram extends AppCompatActivity {
         }
         cursor.close();
 
+        request = "SELECT calories FROM daysprograms WHERE isCompleted = 1 AND program = " + exercises.getIdProgram();
+        cursor = database.rawQuery(request, null);
+        cursor.moveToFirst();
+        List<Entry> listCalories = new ArrayList<>();
+        int x=0;
+        if(!cursor.isAfterLast()){
+            x++;
+            listCalories.add(new Entry(x, cursor.getInt(0)));
+        }
+        cursor.close();
+
         int ROWS = 6;
         int COLUMNS = 5;
 
         TableLayout tableLayout = findViewById(R.id.tableLayoutViewReportProgram);
-        tableLayout.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
-                TableLayout.LayoutParams.WRAP_CONTENT));
         for (int i = 0; i < ROWS; i++) {
 
             TableRow tableRow = new TableRow(this);
 
             for (int j = 0; j < COLUMNS; j++) {
                 RelativeLayout relativeLayout = new RelativeLayout(this);
+                relativeLayout.setPadding(5,5,5,5);
                 relativeLayout.setGravity(Gravity.CENTER);
+                relativeLayout.setAlpha(0.55f);
                 TextView tvNumber = new TextView(this);
-                tvNumber.setTextSize(30);
+                tvNumber.setTextSize(35);
                 Integer num = i*COLUMNS+j+1;
                 tvNumber.setText(num.toString());
                 relativeLayout.addView(tvNumber);
@@ -57,5 +75,15 @@ public class ViewReportProgram extends AppCompatActivity {
 
             tableLayout.addView(tableRow, i);
         }
+
+        Button btnFinishTraining = findViewById(R.id.btnFinishTraining);
+        final Intent viewHistory = new Intent(this, ViewHistory.class);
+
+        btnFinishTraining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(viewHistory);
+            }
+        });
     }
 }

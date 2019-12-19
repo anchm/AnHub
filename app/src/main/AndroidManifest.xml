@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewReportProgram"></activity>
+        <activity android:name=".ViewSettings"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".ViewDataAboutYou" />
+        <activity android:name=".ViewHistory" />
+        <activity android:name=".ViewReportProgram" />
         <activity android:name=".ViewReportExercises" />
         <activity android:name=".ControllerExercises" />
         <activity android:name=".ExecuteExercises" />

@@ -14,8 +14,6 @@ public class EntryDataAboutYou extends AppCompatActivity {
     static final int ENTRY_WEIGHT_REQUEST = 0;
     static final int ENTRY_HEIGHT_REQUEST = 1;
 
-    static final String FILE_NAME_DATA_ABOUT_YOU = "data_about_yourself";
-
     TextView tvWeight;
     TextView tvHeight;
     TextView tvBMI;
@@ -61,12 +59,13 @@ public class EntryDataAboutYou extends AppCompatActivity {
 
             btnGoToPrograms = findViewById(R.id.btnGoToPrograms);
 
-            final Intent viewChoosedProgramsIntent = new Intent(this, ViewChoosedPrograms.class);
+            final Intent menuIntent = new Intent(this, Menu.class);
 
             View.OnClickListener oclBtnGoToPrograms = new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(viewChoosedProgramsIntent);
+                    menuIntent.putExtra("activity", "ViewChoosedPrograms");
+                    startActivity(menuIntent);
                 }
             };
             btnGoToPrograms.setOnClickListener(oclBtnGoToPrograms);
