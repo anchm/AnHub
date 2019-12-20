@@ -3,11 +3,13 @@ package com.example.myapplication;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import static android.content.Context.MODE_PRIVATE;
+
 public class DataAboutYou {
 
     private int height;
     private int weight;
-    private float BMI;
+    private int BMI;
 
     private static DataAboutYou INSTANCE;
 
@@ -33,17 +35,30 @@ public class DataAboutYou {
         this.weight=weight;
     }
 
-    public void setBMI(float BMI){
+    public void setBMI(int BMI){
         this.BMI=BMI;
     }
 
+    public void recalculateBMI(){
+        float dHeight = (float) height /100;
+        float dWeight = (float) weight;
+        BMI = Math.round(dWeight/dHeight/dHeight);
+    }
+
     public void writeData(Context context){
-        spDataAboutYou = context.getSharedPreferences(FILE_NAME_DATA_ABOUT_YOU, Context.MODE_PRIVATE);
+        spDataAboutYou = context.getSharedPreferences(FILE_NAME_DATA_ABOUT_YOU, MODE_PRIVATE);
         SharedPreferences.Editor ed = spDataAboutYou.edit();
         ed.putInt("height", height);
         ed.putInt("weight", weight);
-        ed.putFloat("BMI", BMI);
+        ed.putInt("BMI", BMI);
         ed.apply();
+    }
+
+    public void loadData(Context context){
+        spDataAboutYou = context.getSharedPreferences(FILE_NAME_DATA_ABOUT_YOU, MODE_PRIVATE);
+        height = spDataAboutYou.getInt("height", 0);
+        weight = spDataAboutYou.getInt("weight", 0);
+        BMI = spDataAboutYou.getInt("BMI", 0);
     }
 
     public int getHeight(){
@@ -54,7 +69,7 @@ public class DataAboutYou {
         return weight;
     }
 
-    public float getBMI(){
+    public int getBMI(){
         return BMI;
     }
 

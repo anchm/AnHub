@@ -4,7 +4,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/background_choose_program">
 
-
     <LinearLayout
         android:id="@+id/layoutTextChooseTrainingProgram"
         android:layout_width="match_parent"

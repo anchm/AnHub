@@ -1,11 +1,11 @@
 package com.example.myapplication;
 
-import android.app.FragmentController;
-import android.app.LocalActivityManager;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TabHost;
+import android.widget.TabWidget;
 
 public class Menu extends TabActivity {
 
@@ -24,7 +24,8 @@ public class Menu extends TabActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        tabHost = getTabHost();
+        tabHost = findViewById(android.R.id.tabhost);
+        tabHost.setup();
 
         setTabSec(VIEW_CHOOSED_PROGRAMS_TAG, "Choosed programs", VIEW_CHOOSED_PROGRAMS_NUM, ViewChoosedPrograms.class);
         setTabSec(VIEW_DATA_ABOUT_YOU_TAG, "You data", VIEW_DATA_ABOUT_YOU_NUM, ViewDataAboutYou.class);
@@ -45,7 +46,7 @@ public class Menu extends TabActivity {
 
         String activityName = getIntent().getStringExtra("activity");
         tabHost.setCurrentTabByTag(activityName);
-
+        tabHost.getTabWidget().getChildAt(tabHost.getCurrentTab()).setBackgroundResource(R.drawable.button_pressed);
     }
 
     private void setTabSec(String nameTag, String textTab, int num, Class classActivity){

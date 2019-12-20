@@ -47,7 +47,7 @@ public class EntryDataAboutYou extends AppCompatActivity {
             int weight = dataAboutYou.getWeight();
             float dHeight = (float) height /100;
             float dWeight = (float) weight;
-            float BMI = dWeight/dHeight/dHeight;
+            int BMI = Math.round(dWeight/dHeight/dHeight);
 
             dataAboutYou.setBMI(BMI);
 

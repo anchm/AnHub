@@ -4,15 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewSettings">
+    tools:context=".ViewSettings"
+    android:background="@drawable/background_cat">
 
 
     <TextView
         android:id="@+id/tvSettings"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="98dp" />
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Settings"/>
+
+    <Button
+        android:id="@+id/btnChangeLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/tvSettings"
+        android:layout_marginTop="20dp"
+        android:text="Language" />
+
+    <Button
+        android:id="@+id/btnChangeVolume"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/btnChangeLanguage"
+        android:layout_marginTop="20dp"
+        android:text="Volume" />
 
 </RelativeLayout>

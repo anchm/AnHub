@@ -70,7 +70,7 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
 
     private void writeChoosedPrograms() {
         myDatabase = MyDatabase.getInstance();
-        myDatabase.initDatabase(this);
+        //myDatabase.initDatabase(this);
         SQLiteDatabase mDb = myDatabase.getDatabase();
 
         HashMap<String, List<String>> programs = ChoosedPrograms.getInstance().getPrograms();

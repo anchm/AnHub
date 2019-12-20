@@ -35,7 +35,7 @@ public class ViewDataAboutYou extends AppCompatActivity {
 
         TextView tvHeight = findViewById(R.id.tvHeightValue);
         TextView tvWeight = findViewById(R.id.tvWeightValue);
-        TextView tvBMI = findViewById(R.id.tvBMIValue);
+        final TextView tvBMI = findViewById(R.id.tvBMIValue);
 
         final RelativeLayout rlChange = findViewById(R.id.rlChange);
 
@@ -48,9 +48,13 @@ public class ViewDataAboutYou extends AppCompatActivity {
         Button btnChangeOK = findViewById(R.id.btnChangeOK);
         Button btnChangeCancel = findViewById(R.id.btnChangeCancel);
 
+        final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+
         trHeight.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 rlChange.setVisibility(View.VISIBLE);
+               // etChangeValue.setHint(dataAboutYou.getHeight());
+                etChangeValue.setText("");
                 tvChange.setText("Change height");
                 TableRow rowChange = (TableRow) v;
                 tvValue = (TextView) rowChange.getChildAt(1);
@@ -58,8 +62,19 @@ public class ViewDataAboutYou extends AppCompatActivity {
             }
         });
 
+        trWeight.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                rlChange.setVisibility(View.VISIBLE);
+               // etChangeValue.setHint(dataAboutYou.getWeight());
+                etChangeValue.setText("");
+                tvChange.setText("Change weight");
+                TableRow rowChange = (TableRow) v;
+                tvValue = (TextView) rowChange.getChildAt(1);
+                data = "weight";
+            }
+        });
 
-        final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        final Context context = this;
 
         View.OnClickListener oclBtnChangeOK = new View.OnClickListener() {
             @Override
@@ -76,10 +91,10 @@ public class ViewDataAboutYou extends AppCompatActivity {
                         case "weight":
                             dataAboutYou.setWeight(Integer.parseInt(value));
                             break;
-                        case "BMI":
-                            dataAboutYou.setBMI(Integer.parseInt(value));
-                            break;
                     }
+                    dataAboutYou.recalculateBMI();
+                    tvBMI.setText(String.valueOf(dataAboutYou.getBMI()));
+                    dataAboutYou.writeData(context);
                 }
             }
         };
@@ -88,6 +103,7 @@ public class ViewDataAboutYou extends AppCompatActivity {
         View.OnClickListener oclButtonChangeCancel = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), 0);
                 rlChange.setVisibility(View.GONE);
             }
         };
@@ -97,15 +113,14 @@ public class ViewDataAboutYou extends AppCompatActivity {
         int weight = dataAboutYou.getWeight();
         float dHeight = (float) height /100;
         float dWeight = (float) weight;
-        float BMI = dWeight/dHeight/dHeight;
+        int BMI = Math.round(dWeight/dHeight/dHeight);
 
         dataAboutYou.setBMI(BMI);
-
         dataAboutYou.writeData(this);
 
         tvHeight.setText(Integer.toString(height));
         tvWeight.setText(Integer.toString(weight));
-        tvBMI.setText(Integer.toString((int)BMI));
+        tvBMI.setText(Integer.toString(BMI));
 
     }
 }

@@ -72,7 +72,7 @@ public class ViewChoosedPrograms extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 startActivity(viewDaysProgramIntent);
-                
+
                 TextView tvIdProgram = view.findViewById(R.id.tvIdProgram);
                 TextView tvProgram = view.findViewById(R.id.tvProgram);
                 TextView tvLvl = view.findViewById(R.id.tvLvl);
