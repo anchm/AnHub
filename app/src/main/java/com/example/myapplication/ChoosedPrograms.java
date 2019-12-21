@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -19,11 +20,28 @@ public class ChoosedPrograms {
         return INSTANCE;
     }
 
-    public void setLvlPrograms(String program, List<String> lvls){
+    void setLvlPrograms(String program, List<String> lvls){
         programs.put(program, lvls);
     }
 
-    public HashMap<String, List<String>> getPrograms(){
+    HashMap<String, List<String>> getPrograms(){
         return programs;
+    }
+
+    void setProgram(String program, String lvl){
+        List<String> lvls = programs.get(program);
+        if (lvls == null) {
+            lvls = new ArrayList<>();
+        }
+        lvls.add(lvl);
+        programs.put(program,lvls);
+    }
+
+    List<String> getLvls(String program){
+        return programs.get(program);
+    }
+
+    void clear(){
+        programs.clear();
     }
 }

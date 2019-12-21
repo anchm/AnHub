@@ -99,7 +99,7 @@ public class ViewDataAboutYou extends AppCompatActivity {
                         public void onClick(View view) {
                             String height = etChangeDataAboutYouValue.getText().toString();
                             int heightValue = Integer.parseInt(height);
-                            if(heightValue>0 && heightValue<250) {
+                            if(heightValue>100 && heightValue<250) {
                                 tvHeight.setText(height);
                                 dataAboutYou.setHeight(heightValue);
                                 dataAboutYou.recalculateBMI();
@@ -147,7 +147,7 @@ public class ViewDataAboutYou extends AppCompatActivity {
                             String weight = etChangeDataAboutYouValue.getText().toString();
                             if (weight.length() != 0) {
                                 int weightValue = Integer.parseInt(weight);
-                                if(weightValue>0 && weightValue<500) {
+                                if(weightValue>30 && weightValue<500) {
                                     tvWeight.setText(weight);
                                     dataAboutYou.setWeight(weightValue);
                                     dataAboutYou.recalculateBMI();

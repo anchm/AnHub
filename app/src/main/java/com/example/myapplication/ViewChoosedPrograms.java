@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
@@ -23,8 +24,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ViewChoosedPrograms extends AppCompatActivity {
-
-    private MyDatabase myDatabase;
 
     ListView lvTrainingPrograms;
 
@@ -37,7 +36,7 @@ public class ViewChoosedPrograms extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_choosed_programs);
 
-        myDatabase = MyDatabase.getInstance();
+        MyDatabase myDatabase = MyDatabase.getInstance();
         SQLiteDatabase mDb = myDatabase.getDatabase();
 
         HashMap<String, Object> program;
@@ -85,6 +84,16 @@ public class ViewChoosedPrograms extends AppCompatActivity {
         });
 
 
+        final Intent chooseTrainingProgramIntent = new Intent(this, ChooseTrainingPrograms.class);
+        Button btnAddPrograms = findViewById(R.id.btnAddPrograms);
+
+        btnAddPrograms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chooseTrainingProgramIntent.putExtra("act", "add");
+                startActivity(chooseTrainingProgramIntent);
+            }
+        });
     }
 
     class ChoosedProgramsAdapter extends BaseAdapter {

@@ -34,7 +34,7 @@ public class EntryWeight extends AppCompatActivity {
                 String weight = etEntryWeight.getText().toString();
                 if (weight.length()!=0){
                     int weightValue = Integer.parseInt(weight);
-                    if(weightValue>0 && weightValue<500) {
+                    if(weightValue>30 && weightValue<500) {
                         dataAboutYou.setWeight(weightValue);
                         finish();
                     }

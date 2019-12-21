@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.AudioManager;
 import android.os.Bundle;
 
-
 public class MainActivity extends AppCompatActivity {
+
+    private MyDatabase myDatabase;
 
     private SharedPreferences sharedPreferences = null;
 
@@ -24,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences(FILE_NAME_DATA_ABOUT_APP, MODE_PRIVATE);
 
-        MyDatabase myDatabase = MyDatabase.getInstance();
+        myDatabase = MyDatabase.getInstance();
         myDatabase.initDatabase(this);
 
         musicPlayer = MusicPlayer.getInstance(this);
@@ -33,17 +36,18 @@ public class MainActivity extends AppCompatActivity {
         DataAboutYou dataAboutYou = DataAboutYou.getInstance();
         dataAboutYou.loadData(this);
 
-
         AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 20, 0);
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, MusicPlayer.BACKGROUND_VOLUME, 0);
 
         if (sharedPreferences.getBoolean("firstrun", true)) {
             sharedPreferences.edit().putBoolean("firstrun", false).apply();
             Intent chooseTrainingProgramIntent = new Intent(this, ChooseTrainingPrograms.class);
+            chooseTrainingProgramIntent.putExtra("act", "new");
             startActivity(chooseTrainingProgramIntent);
         }
         else {
-            sharedPreferences.edit().putBoolean("firstrun", true).apply();
+            //sharedPreferences.edit().putBoolean("firstrun", true).apply();
+            readChoosedTrainginPrograms();
             Intent menuIntent = new Intent(this, Menu.class);
             menuIntent.putExtra("activity", "ViewChoosedPrograms");
             startActivity(menuIntent);
@@ -59,6 +63,25 @@ public class MainActivity extends AppCompatActivity {
     public void onDestroy() {
         super.onDestroy();
         musicPlayer.stop();
+    }
+
+    private void readChoosedTrainginPrograms(){
+        SQLiteDatabase mDb = myDatabase.getDatabase();
+
+        Cursor cursor = mDb.rawQuery("SELECT * FROM trainingprograms WHERE ischoosed = 1", null);
+        cursor.moveToFirst();
+
+        ChoosedPrograms choosedPrograms = ChoosedPrograms.getInstance();
+
+        while (!cursor.isAfterLast()) {
+            String program = cursor.getString(1);
+            String lvl = cursor.getString(2);
+
+            choosedPrograms.setProgram(program, lvl);
+
+            cursor.moveToNext();
+        }
+        cursor.close();
     }
 
 }

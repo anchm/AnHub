@@ -34,7 +34,7 @@ public class EntryHeight extends AppCompatActivity {
                 String height = etEntryHeight.getText().toString();
                 if (height.length()!=0){
                     int heightValue = Integer.parseInt(height);
-                    if(heightValue>0 && heightValue<250) {
+                    if(heightValue>100 && heightValue<250) {
                         dataAboutYou.setHeight(heightValue);
                         finish();
                     }

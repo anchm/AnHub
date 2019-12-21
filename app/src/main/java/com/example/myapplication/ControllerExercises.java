@@ -75,7 +75,7 @@ public class ControllerExercises extends AppCompatActivity {
         fixedRelaxationWindow();
 
         AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 40, 0);
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, MusicPlayer.EXECUTE_EXERCISES_VOLUME, 0);
     }
 
     @Override

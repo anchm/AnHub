@@ -17,14 +17,7 @@ import java.util.Map;
 
 public class ChooseLvlTraining extends AppCompatActivity {
 
-    Button btnSimpleLvl;
-    Button btnMediumLvl;
-    Button btnHardLvl;
-    Button btnSelectLvlTrain;
-
     HashMap<Button, Boolean> stateButtons = new HashMap<>();
-
-    ChoosedPrograms choosedPrograms = ChoosedPrograms.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +27,18 @@ public class ChooseLvlTraining extends AppCompatActivity {
 
         setContentView(R.layout.activity_choose_lvl_training);
 
-        btnSimpleLvl = findViewById(R.id.btnSimpleLvl);
-        btnMediumLvl = findViewById(R.id.btnMediumLvl);
-        btnHardLvl = findViewById(R.id.btnHardLvl);
-        btnSelectLvlTrain = findViewById(R.id.btnSelectLvlTrain);
+        Button btnSimpleLvl = findViewById(R.id.btnSimpleLvl);
+        Button btnMediumLvl = findViewById(R.id.btnMediumLvl);
+        Button btnHardLvl = findViewById(R.id.btnHardLvl);
+        Button btnSelectLvlTrain = findViewById(R.id.btnSelectLvlTrain);
+
+        final String nameTrain;
+        if(trainId == R.id.btnWaist){
+            nameTrain = "waist";
+        }
+        else nameTrain = "legs";
+
+        final ChoosedPrograms choosedPrograms = ChoosedPrograms.getInstance();
 
         stateButtons.put(btnSimpleLvl,false);
         stateButtons.put(btnMediumLvl,false);
@@ -47,11 +48,26 @@ public class ChooseLvlTraining extends AppCompatActivity {
         btnMediumLvl.setBackgroundResource(R.drawable.button_not_pressed);
         btnHardLvl.setBackgroundResource(R.drawable.button_not_pressed);
 
-        final String nameTrain;
-        if(trainId == R.id.btnWaist){
-            nameTrain = "waist";
+        List<String> lvls = choosedPrograms.getLvls(nameTrain);
+        if(lvls!=null){
+            for (String lvl: lvls) {
+                for(Map.Entry<Button, Boolean> entry : stateButtons.entrySet()){
+                    if(lvl.equals(entry.getKey().getText().toString())){
+                        entry.setValue(true);
+                    }
+                }
+                if(lvl.equals("simple")){
+                    btnSimpleLvl.setBackgroundResource(R.drawable.button_pressed);
+                }
+                else if(lvl.equals("medium")){
+                    btnMediumLvl.setBackgroundResource(R.drawable.button_pressed);
+                }
+                else if(lvl.equals("hard")){
+                    btnHardLvl.setBackgroundResource(R.drawable.button_pressed);
+                }
+            }
         }
-        else nameTrain = "legs";
+
 
         View.OnClickListener oclBtnChooseLvl = new View.OnClickListener() {
             @Override
@@ -78,6 +94,7 @@ public class ChooseLvlTraining extends AppCompatActivity {
         View.OnClickListener oclBtnSelect = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                choosedPrograms.clear();
                 List<String> lvls = new ArrayList<>();
                 for(Map.Entry<Button, Boolean> entry : stateButtons.entrySet()){
                     if(entry.getValue()){

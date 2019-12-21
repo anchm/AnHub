@@ -28,24 +28,20 @@ import java.util.Map;
 
 public class ChooseTrainingPrograms extends AppCompatActivity {
 
-    Button btnWaist;
-    Button btnLegs;
-    Button btnComplete;
-    RelativeLayout layoutChooseLvl;
-
     private MyDatabase myDatabase;
 
-    private Intent entryDataAboutYouIntent;
+    private String act;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_training_programs);
 
-        btnWaist = findViewById(R.id.btnWaist);
-        btnLegs = findViewById(R.id.btnLegs);
-        btnComplete = findViewById(R.id.btnComplete);
-        layoutChooseLvl = findViewById(R.id.layoutChooseLvl);
+        act = getIntent().getStringExtra("act");
+
+        Button btnWaist = findViewById(R.id.btnWaist);
+        Button btnLegs = findViewById(R.id.btnLegs);
+        Button btnComplete = findViewById(R.id.btnComplete);
 
         final Intent chooseLvlTrainingIntent = new Intent(this, ChooseLvlTraining.class);
 
@@ -59,13 +55,11 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
         btnWaist.setOnClickListener(oclBtnWaistAndLegs);
         btnLegs.setOnClickListener(oclBtnWaistAndLegs);
 
-        entryDataAboutYouIntent = new Intent(this, EntryDataAboutYou.class);
 
         View.OnClickListener oclBtnComplete = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 writeChoosedPrograms();
-
             }
         };
         btnComplete.setOnClickListener(oclBtnComplete);
@@ -75,6 +69,9 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
     private void writeChoosedPrograms() {
         myDatabase = MyDatabase.getInstance();
         SQLiteDatabase mDb = myDatabase.getDatabase();
+
+        String request = "UPDATE trainingprograms SET ischoosed = 0";
+        mDb.execSQL(request);
 
         HashMap<String, List<String>> programs = ChoosedPrograms.getInstance().getPrograms();
 
@@ -88,11 +85,19 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
         else {
             for (Map.Entry<String, List<String>> entry : programs.entrySet()) {
                 for (String lvl : entry.getValue()) {
-                    String request = "UPDATE trainingprograms SET ischoosed = 1 WHERE program = \"" + entry.getKey() + "\" AND lvl = \"" + lvl + "\"";
+                    request = "UPDATE trainingprograms SET ischoosed = 1 WHERE program = \"" + entry.getKey() + "\" AND lvl = \"" + lvl + "\"";
                     mDb.execSQL(request);
                 }
             }
-            startActivity(entryDataAboutYouIntent);
+            if(act.equals("new")){
+                Intent entryDataAboutYouIntent = new Intent(this, EntryDataAboutYou.class);
+                startActivity(entryDataAboutYouIntent);
+            }
+            else if(act.equals("add")){
+                Intent menuIntent = new Intent(this, Menu.class);
+                menuIntent.putExtra("activity", "ViewChoosedPrograms");
+                startActivity(menuIntent);
+            }
         }
     }
 

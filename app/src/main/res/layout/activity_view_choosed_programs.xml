@@ -14,14 +14,28 @@
         android:textSize="30dp"
         android:text="@string/choosedTrainingPrograms"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
         android:textStyle="bold"
         android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnAddPrograms"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_not_pressed"
+        android:alpha="0.8"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/tvChoosedPrograms"
+        android:layout_alignRight="@+id/tvChoosedPrograms"
+        android:text="Add prorams" />
 
     <ListView android:id="@+id/lvTrainingPrograms"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tvChoosedPrograms"
-        android:layout_marginBottom="65dp"/>
+        android:layout_below="@+id/btnAddPrograms"
+        android:layout_marginBottom="65dp">
+
+    </ListView>
+
+
 
 </RelativeLayout>

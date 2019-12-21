@@ -83,7 +83,7 @@ public class ViewReportExercises extends AppCompatActivity {
 
 
         AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 20, 0);
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, MusicPlayer.BACKGROUND_VOLUME, 0);
     }
 
     @Override
