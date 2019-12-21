@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class EntryWeight extends AppCompatActivity {
 
-    EditText etEntryWeight;
-    Button btnEntryWeight;
+    private EditText etEntryWeight;
+    private Button btnEntryWeight;
+
+    private TextView tvIncorrectData;
 
     DataAboutYou dataAboutYou = DataAboutYou.getInstance();
 
@@ -23,12 +26,21 @@ public class EntryWeight extends AppCompatActivity {
         etEntryWeight = findViewById(R.id.etEntryWeight);
         btnEntryWeight = findViewById(R.id.btnEntryWeight);
 
+        tvIncorrectData = findViewById(R.id.tvIncorrectData);
+
         View.OnClickListener oclBtnEntryWeight = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (etEntryWeight.getText().length()!=0){
-                    dataAboutYou.setWeight(Integer.parseInt(etEntryWeight.getText().toString()));
-                    finish();
+                String weight = etEntryWeight.getText().toString();
+                if (weight.length()!=0){
+                    int weightValue = Integer.parseInt(weight);
+                    if(weightValue>0 && weightValue<500) {
+                        dataAboutYou.setWeight(weightValue);
+                        finish();
+                    }
+                    else{
+                        tvIncorrectData.setVisibility(View.VISIBLE);
+                    }
                 }
             }
         };

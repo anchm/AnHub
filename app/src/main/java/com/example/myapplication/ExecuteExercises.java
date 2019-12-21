@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -25,8 +26,13 @@ public class ExecuteExercises extends AppCompatActivity {
     private TextView tvCountRepeatCurrentExercise;
     private TextView tvMetricsCurrentExercise;
     private ProgressBar pbExecuteExercise;
+    private TextView tvSkipExercise;
 
     private Queue<Exercise> exercises;
+
+    private boolean isSkip;
+
+    private CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +47,7 @@ public class ExecuteExercises extends AppCompatActivity {
         pbExecuteExercise = findViewById(R.id.pbExecuteExercise);
         tvCountRepeatCurrentExercise = findViewById(R.id.tvCountRepeatCurrentExercise);
         tvMetricsCurrentExercise = findViewById(R.id.tvMetricsCurrentExercise);
+        tvSkipExercise = findViewById(R.id.tvSkipExercise);
 
         Exercise exercise = exercises.poll();
 
@@ -69,10 +76,21 @@ public class ExecuteExercises extends AppCompatActivity {
             }
         }
 
-        pbExecuteExercise.setMax(5);
-        new CountDownTimer(5000, 1000) {
+        tvSkipExercise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                countDownTimer.cancel();
+                finish();
+            }
+        });
+
+        pbExecuteExercise.setMax(10);
+        countDownTimer = new CountDownTimer(10000, 1000) {
 
             public void onTick(long millisUntilFinished) {
+                if(isSkip) {
+                    finish();
+                }
                 int time = new BigDecimal(millisUntilFinished/1000).intValueExact();
                 tvCountDownTimerExecuteExercise.setText("" + time);
                 pbExecuteExercise.setProgress(time);

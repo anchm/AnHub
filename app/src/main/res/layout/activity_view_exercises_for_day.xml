@@ -53,7 +53,8 @@
     <ListView android:id="@+id/lvExercisesForDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/layoutViewExercisesForDay"/>
+        android:layout_below="@+id/layoutViewExercisesForDay"
+        android:layout_marginBottom="100dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"

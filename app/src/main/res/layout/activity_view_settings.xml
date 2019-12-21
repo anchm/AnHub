@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:textSize="30dp"
         android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
         android:text="Settings"/>
 
     <Button
@@ -22,15 +23,21 @@
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_below="@+id/tvSettings"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_not_pressed"
+        android:alpha="0.6"
+        android:textSize="20dp"
         android:text="Language" />
 
     <Button
         android:id="@+id/btnChangeVolume"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/btnChangeLanguage"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_not_pressed"
+        android:alpha="0.6"
+        android:textSize="20dp"
         android:text="Volume" />
 
 </RelativeLayout>

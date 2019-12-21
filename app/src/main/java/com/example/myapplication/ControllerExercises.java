@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -27,6 +28,7 @@ public class ControllerExercises extends AppCompatActivity {
     private TextView tvCountRepeatNextExercise;
     private TextView tvMetricsNextExercise;
     private ImageView ivNextExercise;
+    private TextView tvSkipRelax;
 
     private Queue<Exercise> exercises;
 
@@ -35,6 +37,8 @@ public class ControllerExercises extends AppCompatActivity {
     private Intent executeExercisesIntent;
 
     private Date date;
+
+    private boolean isSkip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +56,17 @@ public class ControllerExercises extends AppCompatActivity {
         tvCountRepeatNextExercise = findViewById(R.id.tvCountRepeatNextExercise);
         tvMetricsNextExercise = findViewById(R.id.tvMetricsNextExercise);
         ivNextExercise = findViewById(R.id.ivNextExercise);
+        tvSkipRelax = findViewById(R.id.tvSkipRelax);
 
-        pbRelaxation.setMax(5);
+        pbRelaxation.setMax(30);
 
+        tvSkipRelax.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isSkip = true;
+                startActivityForResult(executeExercisesIntent, EXECUTE_EXERCISES_REQUEST);
+            }
+        });
 
         exercises = Exercises.getInstance().getExercises();
 
@@ -65,7 +77,7 @@ public class ControllerExercises extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         if (exercises.size()>0){
             tvCurrentState.setText("Relaxation");
-
+            isSkip = false;
             fixedRelaxationWindow();
         }
         else {
@@ -101,8 +113,11 @@ public class ControllerExercises extends AppCompatActivity {
             }
         }
 
-        new CountDownTimer(5000, 1000) {
+        new CountDownTimer(30000, 1000) {
             public void onTick(long millisUntilFinished) {
+                if(isSkip) {
+                    cancel();
+                }
                 int time = new BigDecimal(millisUntilFinished/1000).intValueExact();
                 tvCountDownTimerRelaxation.setText("" + time);
                 pbRelaxation.setProgress(time);

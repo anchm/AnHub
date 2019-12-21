@@ -58,13 +58,13 @@ public class ViewSettings extends AppCompatActivity {
     protected Dialog onCreateDialog(int id) {
         if(id==ID_CHANGE_LANGUAGE){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            final String[] languages = {"English", "Russian"};
+            final String[] languages = {"English"};
 
             builder.setTitle("Set language");
             builder.setItems(languages, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int item) {
-                    btnChangeLanguage.setText("Language:" + languages[item]);
+                    btnChangeLanguage.setText("Language: " + languages[item]);
                     settings.setLanguage(languages[item]);
                 }
             });

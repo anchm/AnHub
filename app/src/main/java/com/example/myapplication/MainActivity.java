@@ -41,30 +41,6 @@ public class MainActivity extends AppCompatActivity {
             menuIntent.putExtra("activity", "ViewChoosedPrograms");
             startActivity(menuIntent);
         }
-
-        /*final Intent ViewChoosedProgramsIntent = new Intent(this, ViewChoosedPrograms.class);
-
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation_view);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.bottom_navigation_item_logs:
-                        startActivity(ViewChoosedProgramsIntent);
-                        Toast.makeText(MainActivity.this, "Recents", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.bottom_navigation_item_progress:
-                        Toast.makeText(MainActivity.this, "Favorites", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.bottom_navigation_item_profile:
-                        Toast.makeText(MainActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
-                        break;
-                }
-                return true;
-            }
-        });
-
-         */
     }
 
 }

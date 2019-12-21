@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class EntryHeight extends AppCompatActivity {
 
-    EditText etEntryHeight;
-    Button btnEntryHeight;
+    private EditText etEntryHeight;
+    private Button btnEntryHeight;
+
+    private TextView tvIncorrectData;
 
     DataAboutYou dataAboutYou = DataAboutYou.getInstance();
 
@@ -23,12 +26,21 @@ public class EntryHeight extends AppCompatActivity {
         etEntryHeight = findViewById(R.id.etEntryHeight);
         btnEntryHeight = findViewById(R.id.btnEntryHeight);
 
+        tvIncorrectData = findViewById(R.id.tvIncorrectData);
+
         View.OnClickListener oclBtnEntryHeight = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (etEntryHeight.getText().length()!=0){
-                    dataAboutYou.setHeight(Integer.parseInt(etEntryHeight.getText().toString()));
-                    finish();
+                String height = etEntryHeight.getText().toString();
+                if (height.length()!=0){
+                    int heightValue = Integer.parseInt(height);
+                    if(heightValue>0 && heightValue<250) {
+                        dataAboutYou.setHeight(heightValue);
+                        finish();
+                    }
+                    else{
+                        tvIncorrectData.setVisibility(View.VISIBLE);
+                    }
                 }
             }
         };

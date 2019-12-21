@@ -52,7 +52,20 @@
             android:gravity="center" />
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/tvSkipRelax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@id/llInfoNextExercise"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:text="skip"
+        android:focusable="true"
+        android:textSize="25sp"/>
+
     <LinearLayout
+        android:id="@+id/llInfoNextExercise"
         android:layout_width="match_parent"
         android:layout_height="125dp"
         android:orientation="horizontal"

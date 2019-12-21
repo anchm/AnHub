@@ -5,17 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 import android.widget.TableRow;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class ViewDataAboutYou extends AppCompatActivity {
 
@@ -25,6 +25,14 @@ public class ViewDataAboutYou extends AppCompatActivity {
 
     private String data;
 
+    private final int ID_CHANGE_HEIGHT = 0;
+    private final int ID_CHANGE_WEIGHT = 1;
+
+    private TextView tvHeight;
+    private TextView tvWeight;
+    private TextView tvBMI;
+    private TextView tvIncorrectData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,81 +41,24 @@ public class ViewDataAboutYou extends AppCompatActivity {
 
         dataAboutYou = DataAboutYou.getInstance();
 
-        TextView tvHeight = findViewById(R.id.tvHeightValue);
-        TextView tvWeight = findViewById(R.id.tvWeightValue);
-        final TextView tvBMI = findViewById(R.id.tvBMIValue);
-
-        final RelativeLayout rlChange = findViewById(R.id.rlChange);
+        tvHeight = findViewById(R.id.tvHeightValue);
+        tvWeight = findViewById(R.id.tvWeightValue);
+        tvBMI = findViewById(R.id.tvBMIValue);
 
         final TableRow trHeight = findViewById(R.id.trHeight);
         final TableRow trWeight = findViewById(R.id.trWeight);
-        final TableRow trBMI = findViewById(R.id.trBMI);
-
-        final TextView tvChange = findViewById(R.id.tvChange);
-        final EditText etChangeValue = findViewById(R.id.etChangeValue);
-        Button btnChangeOK = findViewById(R.id.btnChangeOK);
-        Button btnChangeCancel = findViewById(R.id.btnChangeCancel);
-
-        final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
         trHeight.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                rlChange.setVisibility(View.VISIBLE);
-               // etChangeValue.setHint(dataAboutYou.getHeight());
-                etChangeValue.setText("");
-                tvChange.setText("Change height");
-                TableRow rowChange = (TableRow) v;
-                tvValue = (TextView) rowChange.getChildAt(1);
-                data = "height";
+                showDialog(ID_CHANGE_HEIGHT);
             }
         });
 
         trWeight.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                rlChange.setVisibility(View.VISIBLE);
-               // etChangeValue.setHint(dataAboutYou.getWeight());
-                etChangeValue.setText("");
-                tvChange.setText("Change weight");
-                TableRow rowChange = (TableRow) v;
-                tvValue = (TextView) rowChange.getChildAt(1);
-                data = "weight";
+                showDialog(ID_CHANGE_WEIGHT);
             }
         });
-
-        final Context context = this;
-
-        View.OnClickListener oclBtnChangeOK = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String value = etChangeValue.getText().toString();
-                if (value.length() != 0){
-                    imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), 0);
-                    rlChange.setVisibility(View.INVISIBLE);
-                    tvValue.setText(value);
-                    switch (data) {
-                        case "height":
-                            dataAboutYou.setHeight(Integer.parseInt(value));
-                            break;
-                        case "weight":
-                            dataAboutYou.setWeight(Integer.parseInt(value));
-                            break;
-                    }
-                    dataAboutYou.recalculateBMI();
-                    tvBMI.setText(String.valueOf(dataAboutYou.getBMI()));
-                    dataAboutYou.writeData(context);
-                }
-            }
-        };
-        btnChangeOK.setOnClickListener(oclBtnChangeOK);
-
-        View.OnClickListener oclButtonChangeCancel = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), 0);
-                rlChange.setVisibility(View.GONE);
-            }
-        };
-        btnChangeCancel.setOnClickListener(oclButtonChangeCancel);
 
         int height = dataAboutYou.getHeight();
         int weight = dataAboutYou.getWeight();
@@ -122,5 +73,106 @@ public class ViewDataAboutYou extends AppCompatActivity {
         tvWeight.setText(Integer.toString(weight));
         tvBMI.setText(Integer.toString(BMI));
 
+    }
+
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        if(id==ID_CHANGE_HEIGHT){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            final LinearLayout view = (LinearLayout) getLayoutInflater().inflate(R.layout.dialog_change_data_about_you, null);
+            builder.setView(view);
+            final EditText etChangeDataAboutYouValue = view.findViewById(R.id.etChangeDataAboutYouValue);
+            TextView tvChangeDataAboutYou = view.findViewById(R.id.tvChangeDataAboutYou);
+            tvChangeDataAboutYou.setText("Change height");
+            final Dialog dialog = builder.create();
+            dialog.setCanceledOnTouchOutside(false);
+            final Context context = this;
+            tvIncorrectData = view.findViewById(R.id.tvIncorrectData);
+            dialog.setOnShowListener(new DialogInterface.OnShowListener() {
+                @Override
+                public void onShow(DialogInterface dialogInterface) {
+                    Button buttonOK = view.findViewById(R.id.btnChangeDataAboutYouOK);
+                    etChangeDataAboutYouValue.setText("");
+                    tvIncorrectData.setVisibility(View.INVISIBLE);
+                    buttonOK.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            String height = etChangeDataAboutYouValue.getText().toString();
+                            int heightValue = Integer.parseInt(height);
+                            if(heightValue>0 && heightValue<250) {
+                                tvHeight.setText(height);
+                                dataAboutYou.setHeight(heightValue);
+                                dataAboutYou.recalculateBMI();
+                                tvBMI.setText(String.valueOf(dataAboutYou.getBMI()));
+                                dataAboutYou.writeData(context);
+                                dialog.dismiss();
+                            }
+                            else {
+                                tvIncorrectData.setVisibility(View.VISIBLE);
+                            }
+                        }
+                    });
+                    Button btnCancel = view.findViewById(R.id.btnChangeDataAboutYouCancel);
+                    btnCancel.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.cancel();
+                        }
+                    });
+                }
+            });
+            dialog.show();
+            return dialog;
+        }
+        else if(id==ID_CHANGE_WEIGHT){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            final LinearLayout view = (LinearLayout) getLayoutInflater().inflate(R.layout.dialog_change_data_about_you, null);
+            builder.setView(view);
+            final EditText etChangeDataAboutYouValue = view.findViewById(R.id.etChangeDataAboutYouValue);
+            TextView tvChangeDataAboutYou = view.findViewById(R.id.tvChangeDataAboutYou);
+            tvChangeDataAboutYou.setText("Change weight");
+            final Dialog dialog = builder.create();
+            dialog.setCanceledOnTouchOutside(false);
+            final Context context = this;
+            tvIncorrectData = view.findViewById(R.id.tvIncorrectData);
+            dialog.setOnShowListener(new DialogInterface.OnShowListener() {
+                @Override
+                public void onShow(DialogInterface dialogInterface) {
+                    Button btnOK = view.findViewById(R.id.btnChangeDataAboutYouOK);
+                    tvIncorrectData.setVisibility(View.INVISIBLE);
+                    etChangeDataAboutYouValue.setText("");
+                    btnOK.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            String weight = etChangeDataAboutYouValue.getText().toString();
+                            if (weight.length() != 0) {
+                                int weightValue = Integer.parseInt(weight);
+                                if(weightValue>0 && weightValue<500) {
+                                    tvWeight.setText(weight);
+                                    dataAboutYou.setWeight(weightValue);
+                                    dataAboutYou.recalculateBMI();
+                                    tvBMI.setText(String.valueOf(dataAboutYou.getBMI()));
+                                    dataAboutYou.writeData(context);
+                                    dialog.dismiss();
+                                }
+                                else {
+                                    tvIncorrectData.setVisibility(View.VISIBLE);
+                                }
+                            }
+                        }
+                    });
+                    Button btnCancel = view.findViewById(R.id.btnChangeDataAboutYouCancel);
+                    btnCancel.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.cancel();
+                        }
+                    });
+                }
+            });
+            dialog.show();
+            return dialog;
+        }
+        return null;
     }
 }
