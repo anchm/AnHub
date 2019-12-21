@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -79,10 +83,15 @@ public class ViewSettings extends AppCompatActivity {
             final TextView tvVolumeValue = view.findViewById(R.id.tvVolumeValue);
             tvVolumeValue.setText(String.valueOf(settings.getVolume()));
             sbVolume.setProgress(settings.getVolume());
+
+            final AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+
+            sbVolume.setProgress(audioManager.getStreamVolume(AudioManager.STREAM_MUSIC));
             sbVolume.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                     tvVolumeValue.setText(String.valueOf(progress));
+                    audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, progress, 0);
                 }
 
                 @Override
@@ -93,6 +102,7 @@ public class ViewSettings extends AppCompatActivity {
                 @Override
                 public void onStopTrackingTouch(SeekBar seekBar) {
                     tvVolumeValue.setText(String.valueOf(seekBar.getProgress()));
+                    audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, seekBar.getProgress(), 0);
                 }
             });
             final Dialog dialog = builder.create();
@@ -116,4 +126,10 @@ public class ViewSettings extends AppCompatActivity {
         }
         return null;
     }
+
+    @Override
+    public void onBackPressed(){
+
+    }
+
 }

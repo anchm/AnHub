@@ -2,8 +2,10 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -71,6 +73,9 @@ public class ControllerExercises extends AppCompatActivity {
         exercises = Exercises.getInstance().getExercises();
 
         fixedRelaxationWindow();
+
+        AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 40, 0);
     }
 
     @Override

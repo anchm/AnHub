@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -83,7 +84,9 @@ public class ChooseLvlTraining extends AppCompatActivity {
                         lvls.add(entry.getKey().getText().toString());
                     }
                 }
-                choosedPrograms.setLvlPrograms(nameTrain, lvls);
+                if(!lvls.isEmpty()){
+                    choosedPrograms.setLvlPrograms(nameTrain, lvls);
+                }
                 finish();
             }
         };

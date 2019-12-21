@@ -58,4 +58,9 @@ public class Menu extends TabActivity {
         tabHost.getTabWidget().getChildAt(num).setAlpha(0.6f);
     }
 
+    @Override
+    public void onBackPressed(){
+
+    }
+
 }

@@ -48,4 +48,10 @@ public class EntryHeight extends AppCompatActivity {
         btnEntryHeight.setOnClickListener(oclBtnEntryHeight);
     }
 
+    @Override
+    public void onBackPressed(){
+
+    }
+
+
 }

@@ -131,4 +131,10 @@ public class ViewChoosedPrograms extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed(){
+
+    }
+
+
 }

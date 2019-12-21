@@ -1,21 +1,21 @@
 package com.example.myapplication;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.AudioManager;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences = null;
 
     private static final String FILE_NAME_DATA_ABOUT_APP = "data_about_app";
+
+    private MusicPlayer musicPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,15 @@ public class MainActivity extends AppCompatActivity {
         MyDatabase myDatabase = MyDatabase.getInstance();
         myDatabase.initDatabase(this);
 
+        musicPlayer = MusicPlayer.getInstance(this);
+        musicPlayer.start();
+
         DataAboutYou dataAboutYou = DataAboutYou.getInstance();
         dataAboutYou.loadData(this);
+
+
+        AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 20, 0);
 
         if (sharedPreferences.getBoolean("firstrun", true)) {
             sharedPreferences.edit().putBoolean("firstrun", false).apply();
@@ -36,11 +43,22 @@ public class MainActivity extends AppCompatActivity {
             startActivity(chooseTrainingProgramIntent);
         }
         else {
-            //sharedPreferences.edit().putBoolean("firstrun", true).apply();
+            sharedPreferences.edit().putBoolean("firstrun", true).apply();
             Intent menuIntent = new Intent(this, Menu.class);
             menuIntent.putExtra("activity", "ViewChoosedPrograms");
             startActivity(menuIntent);
-        }
+       }
+    }
+
+    @Override
+    public void onBackPressed(){
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        musicPlayer.stop();
     }
 
 }

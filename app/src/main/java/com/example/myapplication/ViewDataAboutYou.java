@@ -175,4 +175,10 @@ public class ViewDataAboutYou extends AppCompatActivity {
         }
         return null;
     }
+
+    @Override
+    public void onBackPressed(){
+
+    }
+
 }

@@ -54,4 +54,8 @@
         <item name="android:indeterminateDrawable">@drawable/progress_bar_drawable</item>
     </style>
 
+    <style name="dialogChooseLanguage" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#BC8F8F</item>
+    </style>
+
 </resources>

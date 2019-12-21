@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import android.text.Layout;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -17,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -32,6 +34,8 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
     RelativeLayout layoutChooseLvl;
 
     private MyDatabase myDatabase;
+
+    private Intent entryDataAboutYouIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,13 +59,13 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
         btnWaist.setOnClickListener(oclBtnWaistAndLegs);
         btnLegs.setOnClickListener(oclBtnWaistAndLegs);
 
-        final Intent entryDataAboutYouIntent = new Intent(this, EntryDataAboutYou.class);
+        entryDataAboutYouIntent = new Intent(this, EntryDataAboutYou.class);
 
         View.OnClickListener oclBtnComplete = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 writeChoosedPrograms();
-                startActivity(entryDataAboutYouIntent);
+
             }
         };
         btnComplete.setOnClickListener(oclBtnComplete);
@@ -70,16 +74,30 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
 
     private void writeChoosedPrograms() {
         myDatabase = MyDatabase.getInstance();
-        //myDatabase.initDatabase(this);
         SQLiteDatabase mDb = myDatabase.getDatabase();
 
         HashMap<String, List<String>> programs = ChoosedPrograms.getInstance().getPrograms();
-        for(Map.Entry<String, List<String>> entry : programs.entrySet()){
-            for (String lvl: entry.getValue()){
-                String request = "UPDATE trainingprograms SET ischoosed = 1 WHERE program = \"" + entry.getKey() + "\" AND lvl = \"" + lvl + "\"";
-                mDb.execSQL(request);
-            }
+
+        if (programs.isEmpty()){
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Please, select at least one program!",
+                    Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.show();
         }
+        else {
+            for (Map.Entry<String, List<String>> entry : programs.entrySet()) {
+                for (String lvl : entry.getValue()) {
+                    String request = "UPDATE trainingprograms SET ischoosed = 1 WHERE program = \"" + entry.getKey() + "\" AND lvl = \"" + lvl + "\"";
+                    mDb.execSQL(request);
+                }
+            }
+            startActivity(entryDataAboutYouIntent);
+        }
+    }
+
+    @Override
+    public void onBackPressed(){
 
     }
 

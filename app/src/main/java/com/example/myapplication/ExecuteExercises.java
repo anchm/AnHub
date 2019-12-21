@@ -9,6 +9,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -27,6 +28,9 @@ public class ExecuteExercises extends AppCompatActivity {
     private TextView tvMetricsCurrentExercise;
     private ProgressBar pbExecuteExercise;
     private TextView tvSkipExercise;
+    private RelativeLayout rlCounter;
+    private RelativeLayout rlOK;
+    private TextView tvOK;
 
     private Queue<Exercise> exercises;
 
@@ -48,12 +52,19 @@ public class ExecuteExercises extends AppCompatActivity {
         tvCountRepeatCurrentExercise = findViewById(R.id.tvCountRepeatCurrentExercise);
         tvMetricsCurrentExercise = findViewById(R.id.tvMetricsCurrentExercise);
         tvSkipExercise = findViewById(R.id.tvSkipExercise);
+        tvOK = findViewById(R.id.tvOK);
 
-        Exercise exercise = exercises.poll();
+        rlCounter = findViewById(R.id.rlCounter);
+        rlOK = findViewById(R.id.rlOK);
+
+        final Exercise exercise = exercises.poll();
 
         tvNameExercise.setText(exercise.getName());
         tvCountRepeatCurrentExercise.setText(exercise.getCountRepeat());
         tvMetricsCurrentExercise.setText(exercise.getMetrics());
+
+        String c = exercise.getCountRepeat();
+        int count = Integer.parseInt(c);
 
         String filename = exercise.getImage();
         InputStream inputStream = null;
@@ -79,27 +90,47 @@ public class ExecuteExercises extends AppCompatActivity {
         tvSkipExercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                countDownTimer.cancel();
+                if (exercise.getMetrics().equals("s")) countDownTimer.cancel();
                 finish();
             }
         });
 
-        pbExecuteExercise.setMax(10);
-        countDownTimer = new CountDownTimer(10000, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                if(isSkip) {
-                    finish();
-                }
-                int time = new BigDecimal(millisUntilFinished/1000).intValueExact();
-                tvCountDownTimerExecuteExercise.setText("" + time);
-                pbExecuteExercise.setProgress(time);
-            }
-            public void onFinish() {
+        tvOK.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 finish();
             }
+        });
+
+        if(exercise.getMetrics().equals("s")) {
+            rlCounter.setVisibility(View.VISIBLE);
+            pbExecuteExercise.setMax(count);
+            countDownTimer = new CountDownTimer(count*1000, 1000) {
+
+                public void onTick(long millisUntilFinished) {
+                    if (isSkip) {
+                        finish();
+                    }
+                    int time = new BigDecimal(millisUntilFinished / 1000).intValueExact();
+                    tvCountDownTimerExecuteExercise.setText("" + time);
+                    pbExecuteExercise.setProgress(time);
+                }
+
+                public void onFinish() {
+                    finish();
+                }
+            }
+                    .start();
         }
-                .start();
+        else if(exercise.getMetrics().equals("x")){
+            rlOK.setVisibility(View.VISIBLE);
+        }
     }
+
+    @Override
+    public void onBackPressed(){
+
+    }
+
 
 }
