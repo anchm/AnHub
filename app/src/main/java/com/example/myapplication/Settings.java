@@ -18,7 +18,7 @@ public class Settings {
     private Settings(Context context) {
         spSettings = context.getSharedPreferences(FILE_NAME_SETTINGS, MODE_PRIVATE);
         language = spSettings.getString("language", "English");
-        volume = spSettings.getInt("volume", 100);
+        volume = spSettings.getInt("volume", MusicPlayer.BACKGROUND_VOLUME);
     }
 
     public static Settings getInstance(Context context) {

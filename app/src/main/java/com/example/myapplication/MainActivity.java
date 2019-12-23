@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     private MusicPlayer musicPlayer;
 
+    private ChoosedPrograms choosedPrograms;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
         AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, MusicPlayer.BACKGROUND_VOLUME, 0);
 
-        if (sharedPreferences.getBoolean("firstrun", true)) {
+        choosedPrograms = ChoosedPrograms.getInstance();
+        readChoosedTrainginPrograms();
+
+        if (sharedPreferences.getBoolean("firstrun", true) || choosedPrograms.isEmpty()) {
             sharedPreferences.edit().putBoolean("firstrun", false).apply();
             Intent chooseTrainingProgramIntent = new Intent(this, ChooseTrainingPrograms.class);
             chooseTrainingProgramIntent.putExtra("act", "new");
@@ -47,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             //sharedPreferences.edit().putBoolean("firstrun", true).apply();
-            readChoosedTrainginPrograms();
             Intent menuIntent = new Intent(this, Menu.class);
             menuIntent.putExtra("activity", "ViewChoosedPrograms");
             startActivity(menuIntent);
@@ -70,8 +74,6 @@ public class MainActivity extends AppCompatActivity {
 
         Cursor cursor = mDb.rawQuery("SELECT * FROM trainingprograms WHERE ischoosed = 1", null);
         cursor.moveToFirst();
-
-        ChoosedPrograms choosedPrograms = ChoosedPrograms.getInstance();
 
         while (!cursor.isAfterLast()) {
             String program = cursor.getString(1);

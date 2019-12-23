@@ -18,6 +18,7 @@ import java.io.InputStream;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Queue;
+import java.util.concurrent.TimeUnit;
 
 import static java.lang.Math.toIntExact;
 
@@ -74,8 +75,21 @@ public class ControllerExercises extends AppCompatActivity {
 
         fixedRelaxationWindow();
 
-        AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, MusicPlayer.EXECUTE_EXERCISES_VOLUME, 0);
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+                for(int i=audioManager.getStreamVolume(AudioManager.STREAM_MUSIC); i<MusicPlayer.EXECUTE_EXERCISES_VOLUME; i++) {
+                    try {
+                        TimeUnit.MILLISECONDS.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, i, 0);
+                }
+            }
+        };
+        new Thread(runnable).start();
     }
 
     @Override

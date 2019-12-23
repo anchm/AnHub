@@ -94,7 +94,7 @@ public class ChooseLvlTraining extends AppCompatActivity {
         View.OnClickListener oclBtnSelect = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                choosedPrograms.clear();
+                choosedPrograms.clearProgram(nameTrain);
                 List<String> lvls = new ArrayList<>();
                 for(Map.Entry<Button, Boolean> entry : stateButtons.entrySet()){
                     if(entry.getValue()){

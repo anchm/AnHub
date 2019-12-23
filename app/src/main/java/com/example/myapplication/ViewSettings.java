@@ -81,12 +81,13 @@ public class ViewSettings extends AppCompatActivity {
             builder.setView(view);
             SeekBar sbVolume = view.findViewById(R.id.sbVolume);
             final TextView tvVolumeValue = view.findViewById(R.id.tvVolumeValue);
-            tvVolumeValue.setText(String.valueOf(settings.getVolume()));
-            sbVolume.setProgress(settings.getVolume());
 
             final AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-            sbVolume.setProgress(audioManager.getStreamVolume(AudioManager.STREAM_MUSIC));
+            settings.setVolume(MusicPlayer.BACKGROUND_VOLUME);
+            tvVolumeValue.setText(String.valueOf(settings.getVolume()));
+            sbVolume.setProgress(settings.getVolume());
+
             sbVolume.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {

@@ -21,10 +21,6 @@ public class ViewDataAboutYou extends AppCompatActivity {
 
     private DataAboutYou dataAboutYou;
 
-    private TextView tvValue;
-
-    private String data;
-
     private final int ID_CHANGE_HEIGHT = 0;
     private final int ID_CHANGE_WEIGHT = 1;
 

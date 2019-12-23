@@ -103,7 +103,9 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-
+        if(act.equals("add")){
+            super.onBackPressed();
+        }
     }
 
 }

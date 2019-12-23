@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">AnHub</string>
     <string name="please_choose_training_program">Please, choose training program</string>
     <string name="waist">Waist</string>
     <string name="legs">Legs</string>

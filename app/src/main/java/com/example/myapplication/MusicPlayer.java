@@ -14,8 +14,8 @@ public class MusicPlayer{
 
     private static MusicPlayer INSTANCE;
 
-    static final int BACKGROUND_VOLUME = 10;
-    static final int EXECUTE_EXERCISES_VOLUME = 40;
+    static final int BACKGROUND_VOLUME = 1;
+    static final int EXECUTE_EXERCISES_VOLUME = 30;
 
     private MusicPlayer(Context context){
         mPlayer= MediaPlayer.create(context, R.raw.music);

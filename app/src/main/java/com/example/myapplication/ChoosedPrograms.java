@@ -41,7 +41,14 @@ public class ChoosedPrograms {
         return programs.get(program);
     }
 
-    void clear(){
-        programs.clear();
+    void clearProgram(String program){
+        List<String> lvls = programs.get(program);
+        if(lvls!=null){
+            lvls.clear();
+        }
+    }
+
+    boolean isEmpty(){
+        return programs.isEmpty();
     }
 }
