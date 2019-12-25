@@ -1,0 +1,3126 @@
+0	0	jumping	10
+1	0	high stepping	20
+2	0	standing bicycle crunches	16
+3	0	cross arm crunches	16
+4	0	superman	10
+5	0	reverse crunches	10
+6	0	leg raises	8
+7	0	skipping without rope	30
+8	0	standing bicycle crunches	14
+9	0	cross arm crunches	16
+10	0	superman	8
+11	0	reverse crunches	8
+12	0	leg raises	8
+13	0	plank	30
+14	0	seated side bend left	16
+15	0	seated side bend right	16
+16	0	cobra stretch	30
+17	0	childs pose	30
+18	1	jumping	10
+19	1	high stepping	20
+20	1	standing bicycle crunches	16
+21	1	cross arm crunches	16
+22	1	superman	10
+23	1	reverse crunches	10
+24	1	leg raises	8
+25	1	skipping without rope	30
+26	1	standing bicycle crunches	14
+27	1	cross arm crunches	16
+28	1	superman	8
+29	1	reverse crunches	8
+30	1	leg raises	8
+31	1	plank	30
+32	1	seated side bend left	16
+33	1	seated side bend right	16
+34	1	cobra stretch	30
+35	1	childs pose	30
+36	2	jumping	10
+37	2	high stepping	20
+38	2	standing bicycle crunches	16
+39	2	cross arm crunches	16
+40	2	superman	10
+41	2	reverse crunches	10
+42	2	leg raises	8
+43	2	skipping without rope	30
+44	2	standing bicycle crunches	14
+45	2	cross arm crunches	16
+46	2	superman	8
+47	2	reverse crunches	8
+48	2	leg raises	8
+49	2	plank	30
+50	2	seated side bend left	16
+51	2	seated side bend right	16
+52	2	cobra stretch	30
+53	2	childs pose	30
+54	3	jumping	10
+55	3	high stepping	20
+56	3	standing bicycle crunches	16
+57	3	cross arm crunches	16
+58	3	superman	10
+59	3	reverse crunches	10
+60	3	leg raises	8
+61	3	skipping without rope	30
+62	3	standing bicycle crunches	14
+63	3	cross arm crunches	16
+64	3	superman	8
+65	3	reverse crunches	8
+66	3	leg raises	8
+67	3	plank	30
+68	3	seated side bend left	16
+69	3	seated side bend right	16
+70	3	cobra stretch	30
+71	3	childs pose	30
+72	4	jumping	10
+73	4	high stepping	20
+74	4	standing bicycle crunches	16
+75	4	cross arm crunches	16
+76	4	superman	10
+77	4	reverse crunches	10
+78	4	leg raises	8
+79	4	skipping without rope	30
+80	4	standing bicycle crunches	14
+81	4	cross arm crunches	16
+82	4	superman	8
+83	4	reverse crunches	8
+84	4	leg raises	8
+85	4	plank	30
+86	4	seated side bend left	16
+87	4	seated side bend right	16
+88	4	cobra stretch	30
+89	4	childs pose	30
+90	5	jumping	10
+91	5	high stepping	20
+92	5	standing bicycle crunches	16
+93	5	cross arm crunches	16
+94	5	superman	10
+95	5	reverse crunches	10
+96	5	leg raises	8
+97	5	skipping without rope	30
+98	5	standing bicycle crunches	14
+99	5	cross arm crunches	16
+100	5	superman	8
+101	5	reverse crunches	8
+102	5	leg raises	8
+103	5	plank	30
+104	5	seated side bend left	16
+105	5	seated side bend right	16
+106	5	cobra stretch	30
+107	5	childs pose	30
+108	6	jumping	10
+109	6	high stepping	20
+110	6	standing bicycle crunches	16
+111	6	cross arm crunches	16
+112	6	superman	10
+113	6	reverse crunches	10
+114	6	leg raises	8
+115	6	skipping without rope	30
+116	6	standing bicycle crunches	14
+117	6	cross arm crunches	16
+118	6	superman	8
+119	6	reverse crunches	8
+120	6	leg raises	8
+121	6	plank	30
+122	6	seated side bend left	16
+123	6	seated side bend right	16
+124	6	cobra stretch	30
+125	6	childs pose	30
+126	7	jumping	10
+127	7	high stepping	20
+128	7	standing bicycle crunches	16
+129	7	cross arm crunches	16
+130	7	superman	10
+131	7	reverse crunches	10
+132	7	leg raises	8
+133	7	skipping without rope	30
+134	7	standing bicycle crunches	14
+135	7	cross arm crunches	16
+136	7	superman	8
+137	7	reverse crunches	8
+138	7	leg raises	8
+139	7	plank	30
+140	7	seated side bend left	16
+141	7	seated side bend right	16
+142	7	cobra stretch	30
+143	7	childs pose	30
+144	8	jumping	10
+145	8	high stepping	20
+146	8	standing bicycle crunches	16
+147	8	cross arm crunches	16
+148	8	superman	10
+149	8	reverse crunches	10
+150	8	leg raises	8
+151	8	skipping without rope	30
+152	8	standing bicycle crunches	14
+153	8	cross arm crunches	16
+154	8	superman	8
+155	8	reverse crunches	8
+156	8	leg raises	8
+157	8	plank	30
+158	8	seated side bend left	16
+159	8	seated side bend right	16
+160	8	cobra stretch	30
+161	8	childs pose	30
+162	9	jumping	10
+163	9	high stepping	20
+164	9	standing bicycle crunches	16
+165	9	cross arm crunches	16
+166	9	superman	10
+167	9	reverse crunches	10
+168	9	leg raises	8
+169	9	skipping without rope	30
+170	9	standing bicycle crunches	14
+171	9	cross arm crunches	16
+172	9	superman	8
+173	9	reverse crunches	8
+174	9	leg raises	8
+175	9	plank	30
+176	9	seated side bend left	16
+177	9	seated side bend right	16
+178	9	cobra stretch	30
+179	9	childs pose	30
+180	10	jumping	10
+181	10	high stepping	20
+182	10	standing bicycle crunches	16
+183	10	cross arm crunches	16
+184	10	superman	10
+185	10	reverse crunches	10
+186	10	leg raises	8
+187	10	skipping without rope	30
+188	10	standing bicycle crunches	14
+189	10	cross arm crunches	16
+190	10	superman	8
+191	10	reverse crunches	8
+192	10	leg raises	8
+193	10	plank	30
+194	10	seated side bend left	16
+195	10	seated side bend right	16
+196	10	cobra stretch	30
+197	10	childs pose	30
+198	11	jumping	10
+199	11	high stepping	20
+200	11	standing bicycle crunches	16
+201	11	cross arm crunches	16
+202	11	superman	10
+203	11	reverse crunches	10
+204	11	leg raises	8
+205	11	skipping without rope	30
+206	11	standing bicycle crunches	14
+207	11	cross arm crunches	16
+208	11	superman	8
+209	11	reverse crunches	8
+210	11	leg raises	8
+211	11	plank	30
+212	11	seated side bend left	16
+213	11	seated side bend right	16
+214	11	cobra stretch	30
+215	11	childs pose	30
+216	12	jumping	10
+217	12	high stepping	20
+218	12	standing bicycle crunches	16
+219	12	cross arm crunches	16
+220	12	superman	10
+221	12	reverse crunches	10
+222	12	leg raises	8
+223	12	skipping without rope	30
+224	12	standing bicycle crunches	14
+225	12	cross arm crunches	16
+226	12	superman	8
+227	12	reverse crunches	8
+228	12	leg raises	8
+229	12	plank	30
+230	12	seated side bend left	16
+231	12	seated side bend right	16
+232	12	cobra stretch	30
+233	12	childs pose	30
+234	13	jumping	10
+235	13	high stepping	20
+236	13	standing bicycle crunches	16
+237	13	cross arm crunches	16
+238	13	superman	10
+239	13	reverse crunches	10
+240	13	leg raises	8
+241	13	skipping without rope	30
+242	13	standing bicycle crunches	14
+243	13	cross arm crunches	16
+244	13	superman	8
+245	13	reverse crunches	8
+246	13	leg raises	8
+247	13	plank	30
+248	13	seated side bend left	16
+249	13	seated side bend right	16
+250	13	cobra stretch	30
+251	13	childs pose	30
+252	14	jumping	10
+253	14	high stepping	20
+254	14	standing bicycle crunches	16
+255	14	cross arm crunches	16
+256	14	superman	10
+257	14	reverse crunches	10
+258	14	leg raises	8
+259	14	skipping without rope	30
+260	14	standing bicycle crunches	14
+261	14	cross arm crunches	16
+262	14	superman	8
+263	14	reverse crunches	8
+264	14	leg raises	8
+265	14	plank	30
+266	14	seated side bend left	16
+267	14	seated side bend right	16
+268	14	cobra stretch	30
+269	14	childs pose	30
+270	15	jumping	10
+271	15	high stepping	20
+272	15	standing bicycle crunches	16
+273	15	cross arm crunches	16
+274	15	superman	10
+275	15	reverse crunches	10
+276	15	leg raises	8
+277	15	skipping without rope	30
+278	15	standing bicycle crunches	14
+279	15	cross arm crunches	16
+280	15	superman	8
+281	15	reverse crunches	8
+282	15	leg raises	8
+283	15	plank	30
+284	15	seated side bend left	16
+285	15	seated side bend right	16
+286	15	cobra stretch	30
+287	15	childs pose	30
+288	16	jumping	10
+289	16	high stepping	20
+290	16	standing bicycle crunches	16
+291	16	cross arm crunches	16
+292	16	superman	10
+293	16	reverse crunches	10
+294	16	leg raises	8
+295	16	skipping without rope	30
+296	16	standing bicycle crunches	14
+297	16	cross arm crunches	16
+298	16	superman	8
+299	16	reverse crunches	8
+300	16	leg raises	8
+301	16	plank	30
+302	16	seated side bend left	16
+303	16	seated side bend right	16
+304	16	cobra stretch	30
+305	16	childs pose	30
+306	17	jumping	10
+307	17	high stepping	20
+308	17	standing bicycle crunches	16
+309	17	cross arm crunches	16
+310	17	superman	10
+311	17	reverse crunches	10
+312	17	leg raises	8
+313	17	skipping without rope	30
+314	17	standing bicycle crunches	14
+315	17	cross arm crunches	16
+316	17	superman	8
+317	17	reverse crunches	8
+318	17	leg raises	8
+319	17	plank	30
+320	17	seated side bend left	16
+321	17	seated side bend right	16
+322	17	cobra stretch	30
+323	17	childs pose	30
+324	18	jumping	10
+325	18	high stepping	20
+326	18	standing bicycle crunches	16
+327	18	cross arm crunches	16
+328	18	superman	10
+329	18	reverse crunches	10
+330	18	leg raises	8
+331	18	skipping without rope	30
+332	18	standing bicycle crunches	14
+333	18	cross arm crunches	16
+334	18	superman	8
+335	18	reverse crunches	8
+336	18	leg raises	8
+337	18	plank	30
+338	18	seated side bend left	16
+339	18	seated side bend right	16
+340	18	cobra stretch	30
+341	18	childs pose	30
+342	19	jumping	10
+343	19	high stepping	20
+344	19	standing bicycle crunches	16
+345	19	cross arm crunches	16
+346	19	superman	10
+347	19	reverse crunches	10
+348	19	leg raises	8
+349	19	skipping without rope	30
+350	19	standing bicycle crunches	14
+351	19	cross arm crunches	16
+352	19	superman	8
+353	19	reverse crunches	8
+354	19	leg raises	8
+355	19	plank	30
+356	19	seated side bend left	16
+357	19	seated side bend right	16
+358	19	cobra stretch	30
+359	19	childs pose	30
+360	20	jumping	10
+361	20	high stepping	20
+362	20	standing bicycle crunches	16
+363	20	cross arm crunches	16
+364	20	superman	10
+365	20	reverse crunches	10
+366	20	leg raises	8
+367	20	skipping without rope	30
+368	20	standing bicycle crunches	14
+369	20	cross arm crunches	16
+370	20	superman	8
+371	20	reverse crunches	8
+372	20	leg raises	8
+373	20	plank	30
+374	20	seated side bend left	16
+375	20	seated side bend right	16
+376	20	cobra stretch	30
+377	20	childs pose	30
+378	21	jumping	10
+379	21	high stepping	20
+380	21	standing bicycle crunches	16
+381	21	cross arm crunches	16
+382	21	superman	10
+383	21	reverse crunches	10
+384	21	leg raises	8
+385	21	skipping without rope	30
+386	21	standing bicycle crunches	14
+387	21	cross arm crunches	16
+388	21	superman	8
+389	21	reverse crunches	8
+390	21	leg raises	8
+391	21	plank	30
+392	21	seated side bend left	16
+393	21	seated side bend right	16
+394	21	cobra stretch	30
+395	21	childs pose	30
+396	22	jumping	10
+397	22	high stepping	20
+398	22	standing bicycle crunches	16
+399	22	cross arm crunches	16
+400	22	superman	10
+401	22	reverse crunches	10
+402	22	leg raises	8
+403	22	skipping without rope	30
+404	22	standing bicycle crunches	14
+405	22	cross arm crunches	16
+406	22	superman	8
+407	22	reverse crunches	8
+408	22	leg raises	8
+409	22	plank	30
+410	22	seated side bend left	16
+411	22	seated side bend right	16
+412	22	cobra stretch	30
+413	22	childs pose	30
+414	23	jumping	10
+415	23	high stepping	20
+416	23	standing bicycle crunches	16
+417	23	cross arm crunches	16
+418	23	superman	10
+419	23	reverse crunches	10
+420	23	leg raises	8
+421	23	skipping without rope	30
+422	23	standing bicycle crunches	14
+423	23	cross arm crunches	16
+424	23	superman	8
+425	23	reverse crunches	8
+426	23	leg raises	8
+427	23	plank	30
+428	23	seated side bend left	16
+429	23	seated side bend right	16
+430	23	cobra stretch	30
+431	23	childs pose	30
+432	24	jumping	10
+433	24	high stepping	20
+434	24	standing bicycle crunches	16
+435	24	cross arm crunches	16
+436	24	superman	10
+437	24	reverse crunches	10
+438	24	leg raises	8
+439	24	skipping without rope	30
+440	24	standing bicycle crunches	14
+441	24	cross arm crunches	16
+442	24	superman	8
+443	24	reverse crunches	8
+444	24	leg raises	8
+445	24	plank	30
+446	24	seated side bend left	16
+447	24	seated side bend right	16
+448	24	cobra stretch	30
+449	24	childs pose	30
+450	25	jumping	10
+451	25	high stepping	20
+452	25	standing bicycle crunches	16
+453	25	cross arm crunches	16
+454	25	superman	10
+455	25	reverse crunches	10
+456	25	leg raises	8
+457	25	skipping without rope	30
+458	25	standing bicycle crunches	14
+459	25	cross arm crunches	16
+460	25	superman	8
+461	25	reverse crunches	8
+462	25	leg raises	8
+463	25	plank	30
+464	25	seated side bend left	16
+465	25	seated side bend right	16
+466	25	cobra stretch	30
+467	25	childs pose	30
+468	26	jumping	10
+469	26	high stepping	20
+470	26	standing bicycle crunches	16
+471	26	cross arm crunches	16
+472	26	superman	10
+473	26	reverse crunches	10
+474	26	leg raises	8
+475	26	skipping without rope	30
+476	26	standing bicycle crunches	14
+477	26	cross arm crunches	16
+478	26	superman	8
+479	26	reverse crunches	8
+480	26	leg raises	8
+481	26	plank	30
+482	26	seated side bend left	16
+483	26	seated side bend right	16
+484	26	cobra stretch	30
+485	26	childs pose	30
+486	26	jumping	10
+487	26	high stepping	20
+488	26	standing bicycle crunches	16
+489	26	cross arm crunches	16
+490	26	superman	10
+491	26	reverse crunches	10
+492	26	leg raises	8
+493	26	skipping without rope	30
+494	26	standing bicycle crunches	14
+495	26	cross arm crunches	16
+496	26	superman	8
+497	26	reverse crunches	8
+498	26	leg raises	8
+499	26	plank	30
+500	26	seated side bend left	16
+501	26	seated side bend right	16
+502	26	cobra stretch	30
+503	26	childs pose	30
+504	26	jumping	10
+505	26	high stepping	20
+506	26	standing bicycle crunches	16
+507	26	cross arm crunches	16
+508	26	superman	10
+509	26	reverse crunches	10
+510	26	leg raises	8
+511	26	skipping without rope	30
+512	26	standing bicycle crunches	14
+513	26	cross arm crunches	16
+514	26	superman	8
+515	26	reverse crunches	8
+516	26	leg raises	8
+517	26	plank	30
+518	26	seated side bend left	16
+519	26	seated side bend right	16
+520	26	cobra stretch	30
+521	26	childs pose	30
+522	27	jumping	10
+523	27	high stepping	20
+524	27	standing bicycle crunches	16
+525	27	cross arm crunches	16
+526	27	superman	10
+527	27	reverse crunches	10
+528	27	leg raises	8
+529	27	skipping without rope	30
+530	27	standing bicycle crunches	14
+531	27	cross arm crunches	16
+532	27	superman	8
+533	27	reverse crunches	8
+534	27	leg raises	8
+535	27	plank	30
+536	27	seated side bend left	16
+537	27	seated side bend right	16
+538	27	cobra stretch	30
+539	27	childs pose	30
+540	28	jumping	10
+541	28	high stepping	20
+542	28	standing bicycle crunches	16
+543	28	cross arm crunches	16
+544	28	superman	10
+545	28	reverse crunches	10
+546	28	leg raises	8
+547	28	skipping without rope	30
+548	28	standing bicycle crunches	14
+549	28	cross arm crunches	16
+550	28	superman	8
+551	28	reverse crunches	8
+552	28	leg raises	8
+553	28	plank	30
+554	28	seated side bend left	16
+555	28	seated side bend right	16
+556	28	cobra stretch	30
+557	28	childs pose	30
+558	28	jumping	10
+559	28	high stepping	20
+560	28	standing bicycle crunches	16
+561	28	cross arm crunches	16
+562	28	superman	10
+563	28	reverse crunches	10
+564	28	leg raises	8
+565	28	skipping without rope	30
+566	28	standing bicycle crunches	14
+567	28	cross arm crunches	16
+568	28	superman	8
+569	28	reverse crunches	8
+570	28	leg raises	8
+571	28	plank	30
+572	28	seated side bend left	16
+573	28	seated side bend right	16
+574	28	cobra stretch	30
+575	28	childs pose	30
+576	28	jumping	10
+577	28	high stepping	20
+578	28	standing bicycle crunches	16
+579	28	cross arm crunches	16
+580	28	superman	10
+581	28	reverse crunches	10
+582	28	leg raises	8
+583	28	skipping without rope	30
+584	28	standing bicycle crunches	14
+585	28	cross arm crunches	16
+586	28	superman	8
+587	28	reverse crunches	8
+588	28	leg raises	8
+589	28	plank	30
+590	28	seated side bend left	16
+591	28	seated side bend right	16
+592	28	cobra stretch	30
+593	28	childs pose	30
+594	28	jumping	10
+595	28	high stepping	20
+596	28	standing bicycle crunches	16
+597	28	cross arm crunches	16
+598	28	superman	10
+599	28	reverse crunches	10
+600	28	leg raises	8
+601	28	skipping without rope	30
+602	28	standing bicycle crunches	14
+603	28	cross arm crunches	16
+604	28	superman	8
+605	28	reverse crunches	8
+606	28	leg raises	8
+607	28	plank	30
+608	28	seated side bend left	16
+609	28	seated side bend right	16
+610	28	cobra stretch	30
+611	28	childs pose	30
+612	29	jumping	10
+613	29	high stepping	20
+614	29	standing bicycle crunches	16
+615	29	cross arm crunches	16
+616	29	superman	10
+617	29	reverse crunches	10
+618	29	leg raises	8
+619	29	skipping without rope	30
+620	29	standing bicycle crunches	14
+621	29	cross arm crunches	16
+622	29	superman	8
+623	29	reverse crunches	8
+624	29	leg raises	8
+625	29	plank	30
+626	29	seated side bend left	16
+627	29	seated side bend right	16
+628	29	cobra stretch	30
+629	29	childs pose	30
+630	30	jumping	10
+631	30	high stepping	20
+632	30	standing bicycle crunches	16
+633	30	cross arm crunches	16
+634	30	superman	10
+635	30	reverse crunches	10
+636	30	leg raises	8
+637	30	skipping without rope	30
+638	30	standing bicycle crunches	14
+639	30	cross arm crunches	16
+640	30	superman	8
+641	30	plank	30
+642	30	seated side bend left	16
+643	30	seated side bend right	16
+644	30	cobra stretch	30
+645	30	childs pose	30
+646	31	jumping	10
+647	31	high stepping	20
+648	31	standing bicycle crunches	16
+649	31	cross arm crunches	16
+650	31	superman	10
+651	31	reverse crunches	10
+652	31	leg raises	8
+653	31	skipping without rope	30
+654	31	standing bicycle crunches	14
+655	31	cross arm crunches	16
+656	31	superman	8
+657	31	plank	30
+658	31	seated side bend left	16
+659	31	seated side bend right	16
+660	31	cobra stretch	30
+661	31	childs pose	30
+662	32	jumping	10
+663	32	high stepping	20
+664	32	standing bicycle crunches	16
+665	32	cross arm crunches	16
+666	32	superman	10
+667	32	reverse crunches	10
+668	32	leg raises	8
+669	32	skipping without rope	30
+670	32	standing bicycle crunches	14
+671	32	cross arm crunches	16
+672	32	superman	8
+673	32	plank	30
+674	32	seated side bend left	16
+675	32	seated side bend right	16
+676	32	cobra stretch	30
+677	32	childs pose	30
+678	33	jumping	10
+679	33	high stepping	20
+680	33	standing bicycle crunches	16
+681	33	cross arm crunches	16
+682	33	superman	10
+683	33	reverse crunches	10
+684	33	leg raises	8
+685	33	skipping without rope	30
+686	33	standing bicycle crunches	14
+687	33	cross arm crunches	16
+688	33	superman	8
+689	33	plank	30
+690	33	seated side bend left	16
+691	33	seated side bend right	16
+692	33	cobra stretch	30
+693	33	childs pose	30
+694	34	jumping	10
+695	34	high stepping	20
+696	34	standing bicycle crunches	16
+697	34	cross arm crunches	16
+698	34	superman	10
+699	34	reverse crunches	10
+700	34	leg raises	8
+701	34	skipping without rope	30
+702	34	standing bicycle crunches	14
+703	34	cross arm crunches	16
+704	34	superman	8
+705	34	plank	30
+706	34	seated side bend left	16
+707	34	seated side bend right	16
+708	34	cobra stretch	30
+709	34	childs pose	30
+710	35	jumping	10
+711	35	high stepping	20
+712	35	standing bicycle crunches	16
+713	35	cross arm crunches	16
+714	35	superman	10
+715	35	reverse crunches	10
+716	35	leg raises	8
+717	35	skipping without rope	30
+718	35	standing bicycle crunches	14
+719	35	cross arm crunches	16
+720	35	superman	8
+721	35	plank	30
+722	35	seated side bend left	16
+723	35	seated side bend right	16
+724	35	cobra stretch	30
+725	35	childs pose	30
+726	36	jumping	10
+727	36	high stepping	20
+728	36	standing bicycle crunches	16
+729	36	cross arm crunches	16
+730	36	superman	10
+731	36	reverse crunches	10
+732	36	leg raises	8
+733	36	skipping without rope	30
+734	36	standing bicycle crunches	14
+735	36	cross arm crunches	16
+736	36	superman	8
+737	36	plank	30
+738	36	seated side bend left	16
+739	36	seated side bend right	16
+740	36	cobra stretch	30
+741	36	childs pose	30
+742	37	jumping	10
+743	37	high stepping	20
+744	37	standing bicycle crunches	16
+745	37	cross arm crunches	16
+746	37	superman	10
+747	37	reverse crunches	10
+748	37	leg raises	8
+749	37	skipping without rope	30
+750	37	standing bicycle crunches	14
+751	37	cross arm crunches	16
+752	37	superman	8
+753	37	plank	30
+754	37	seated side bend left	16
+755	37	seated side bend right	16
+756	37	cobra stretch	30
+757	37	childs pose	30
+758	38	jumping	10
+759	38	high stepping	20
+760	38	standing bicycle crunches	16
+761	38	cross arm crunches	16
+762	38	superman	10
+763	38	reverse crunches	10
+764	38	leg raises	8
+765	38	skipping without rope	30
+766	38	standing bicycle crunches	14
+767	38	cross arm crunches	16
+768	38	superman	8
+769	38	plank	30
+770	38	seated side bend left	16
+771	38	seated side bend right	16
+772	38	cobra stretch	30
+773	38	childs pose	30
+774	39	jumping	10
+775	39	high stepping	20
+776	39	standing bicycle crunches	16
+777	39	cross arm crunches	16
+778	39	superman	10
+779	39	reverse crunches	10
+780	39	leg raises	8
+781	39	skipping without rope	30
+782	39	standing bicycle crunches	14
+783	39	cross arm crunches	16
+784	39	superman	8
+785	39	plank	30
+786	39	seated side bend left	16
+787	39	seated side bend right	16
+788	39	cobra stretch	30
+789	39	childs pose	30
+790	40	jumping	10
+791	40	high stepping	20
+792	40	standing bicycle crunches	16
+793	40	cross arm crunches	16
+794	40	superman	10
+795	40	reverse crunches	10
+796	40	leg raises	8
+797	40	skipping without rope	30
+798	40	standing bicycle crunches	14
+799	40	cross arm crunches	16
+800	40	superman	8
+801	40	plank	30
+802	40	seated side bend left	16
+803	40	seated side bend right	16
+804	40	cobra stretch	30
+805	40	childs pose	30
+806	40	jumping	10
+807	40	high stepping	20
+808	40	standing bicycle crunches	16
+809	40	cross arm crunches	16
+810	40	superman	10
+811	40	reverse crunches	10
+812	40	leg raises	8
+813	40	skipping without rope	30
+814	40	standing bicycle crunches	14
+815	40	cross arm crunches	16
+816	40	superman	8
+817	40	plank	30
+818	40	seated side bend left	16
+819	40	seated side bend right	16
+820	40	cobra stretch	30
+821	40	childs pose	30
+822	41	jumping	10
+823	41	high stepping	20
+824	41	standing bicycle crunches	16
+825	41	cross arm crunches	16
+826	41	superman	10
+827	41	reverse crunches	10
+828	41	leg raises	8
+829	41	skipping without rope	30
+830	41	standing bicycle crunches	14
+831	41	cross arm crunches	16
+832	41	superman	8
+833	41	plank	30
+834	41	seated side bend left	16
+835	41	seated side bend right	16
+836	41	cobra stretch	30
+837	41	childs pose	30
+838	42	jumping	10
+839	42	high stepping	20
+840	42	standing bicycle crunches	16
+841	42	cross arm crunches	16
+842	42	superman	10
+843	42	reverse crunches	10
+844	42	leg raises	8
+845	42	skipping without rope	30
+846	42	standing bicycle crunches	14
+847	42	cross arm crunches	16
+848	42	superman	8
+849	42	plank	30
+850	42	seated side bend left	16
+851	42	seated side bend right	16
+852	42	cobra stretch	30
+853	42	childs pose	30
+854	43	jumping	10
+855	43	high stepping	20
+856	43	standing bicycle crunches	16
+857	43	cross arm crunches	16
+858	43	superman	10
+859	43	reverse crunches	10
+860	43	leg raises	8
+861	43	skipping without rope	30
+862	43	standing bicycle crunches	14
+863	43	cross arm crunches	16
+864	43	superman	8
+865	43	plank	30
+866	43	seated side bend left	16
+867	43	seated side bend right	16
+868	43	cobra stretch	30
+869	43	childs pose	30
+870	43	jumping	10
+871	43	high stepping	20
+872	43	standing bicycle crunches	16
+873	43	cross arm crunches	16
+874	43	superman	10
+875	43	reverse crunches	10
+876	43	leg raises	8
+877	43	skipping without rope	30
+878	43	standing bicycle crunches	14
+879	43	cross arm crunches	16
+880	43	superman	8
+881	43	plank	30
+882	43	seated side bend left	16
+883	43	seated side bend right	16
+884	43	cobra stretch	30
+885	43	childs pose	30
+886	43	jumping	10
+887	43	high stepping	20
+888	43	standing bicycle crunches	16
+889	43	cross arm crunches	16
+890	43	superman	10
+891	43	reverse crunches	10
+892	43	leg raises	8
+893	43	skipping without rope	30
+894	43	standing bicycle crunches	14
+895	43	cross arm crunches	16
+896	43	superman	8
+897	43	plank	30
+898	43	seated side bend left	16
+899	43	seated side bend right	16
+900	43	cobra stretch	30
+901	43	childs pose	30
+902	44	jumping	10
+903	44	high stepping	20
+904	44	standing bicycle crunches	16
+905	44	cross arm crunches	16
+906	44	superman	10
+907	44	reverse crunches	10
+908	44	leg raises	8
+909	44	skipping without rope	30
+910	44	standing bicycle crunches	14
+911	44	cross arm crunches	16
+912	44	superman	8
+913	44	plank	30
+914	44	seated side bend left	16
+915	44	seated side bend right	16
+916	44	cobra stretch	30
+917	44	childs pose	30
+918	44	jumping	10
+919	44	high stepping	20
+920	44	standing bicycle crunches	16
+921	44	cross arm crunches	16
+922	44	superman	10
+923	44	reverse crunches	10
+924	44	leg raises	8
+925	44	skipping without rope	30
+926	44	standing bicycle crunches	14
+927	44	cross arm crunches	16
+928	44	superman	8
+929	44	plank	30
+930	44	seated side bend left	16
+931	44	seated side bend right	16
+932	44	cobra stretch	30
+933	44	childs pose	30
+934	44	jumping	10
+935	44	high stepping	20
+936	44	standing bicycle crunches	16
+937	44	cross arm crunches	16
+938	44	superman	10
+939	44	reverse crunches	10
+940	44	leg raises	8
+941	44	skipping without rope	30
+942	44	standing bicycle crunches	14
+943	44	cross arm crunches	16
+944	44	superman	8
+945	44	plank	30
+946	44	seated side bend left	16
+947	44	seated side bend right	16
+948	44	cobra stretch	30
+949	44	childs pose	30
+950	45	jumping	10
+951	45	high stepping	20
+952	45	standing bicycle crunches	16
+953	45	cross arm crunches	16
+954	45	superman	10
+955	45	reverse crunches	10
+956	45	leg raises	8
+957	45	skipping without rope	30
+958	45	standing bicycle crunches	14
+959	45	cross arm crunches	16
+960	45	superman	8
+961	45	plank	30
+962	45	seated side bend left	16
+963	45	seated side bend right	16
+964	45	cobra stretch	30
+965	45	childs pose	30
+966	46	jumping	10
+967	46	high stepping	20
+968	46	standing bicycle crunches	16
+969	46	cross arm crunches	16
+970	46	superman	10
+971	46	reverse crunches	10
+972	46	leg raises	8
+973	46	skipping without rope	30
+974	46	standing bicycle crunches	14
+975	46	cross arm crunches	16
+976	46	superman	8
+977	46	plank	30
+978	46	seated side bend left	16
+979	46	seated side bend right	16
+980	46	cobra stretch	30
+981	46	childs pose	30
+982	47	jumping	10
+983	47	high stepping	20
+984	47	standing bicycle crunches	16
+985	47	cross arm crunches	16
+986	47	superman	10
+987	47	reverse crunches	10
+988	47	leg raises	8
+989	47	skipping without rope	30
+990	47	standing bicycle crunches	14
+991	47	cross arm crunches	16
+992	47	superman	8
+993	47	plank	30
+994	47	seated side bend left	16
+995	47	seated side bend right	16
+996	47	cobra stretch	30
+997	47	childs pose	30
+998	48	jumping	10
+999	48	high stepping	20
+1000	48	standing bicycle crunches	16
+1001	48	cross arm crunches	16
+1002	48	superman	10
+1003	48	reverse crunches	10
+1004	48	leg raises	8
+1005	48	skipping without rope	30
+1006	48	standing bicycle crunches	14
+1007	48	cross arm crunches	16
+1008	48	superman	8
+1009	48	plank	30
+1010	48	seated side bend left	16
+1011	48	seated side bend right	16
+1012	48	cobra stretch	30
+1013	48	childs pose	30
+1014	49	jumping	10
+1015	49	high stepping	20
+1016	49	standing bicycle crunches	16
+1017	49	cross arm crunches	16
+1018	49	superman	10
+1019	49	reverse crunches	10
+1020	49	leg raises	8
+1021	49	skipping without rope	30
+1022	49	standing bicycle crunches	14
+1023	49	cross arm crunches	16
+1024	49	superman	8
+1025	49	plank	30
+1026	49	seated side bend left	16
+1027	49	seated side bend right	16
+1028	49	cobra stretch	30
+1029	49	childs pose	30
+1030	50	jumping	10
+1031	50	high stepping	20
+1032	50	standing bicycle crunches	16
+1033	50	cross arm crunches	16
+1034	50	superman	10
+1035	50	reverse crunches	10
+1036	50	leg raises	8
+1037	50	skipping without rope	30
+1038	50	standing bicycle crunches	14
+1039	50	cross arm crunches	16
+1040	50	superman	8
+1041	50	plank	30
+1042	50	seated side bend left	16
+1043	50	seated side bend right	16
+1044	50	cobra stretch	30
+1045	50	childs pose	30
+1046	51	jumping	10
+1047	51	high stepping	20
+1048	51	standing bicycle crunches	16
+1049	51	cross arm crunches	16
+1050	51	superman	10
+1051	51	reverse crunches	10
+1052	51	leg raises	8
+1053	51	skipping without rope	30
+1054	51	standing bicycle crunches	14
+1055	51	cross arm crunches	16
+1056	51	superman	8
+1057	51	plank	30
+1058	51	seated side bend left	16
+1059	51	seated side bend right	16
+1060	51	cobra stretch	30
+1061	51	childs pose	30
+1062	52	jumping	10
+1063	52	high stepping	20
+1064	52	standing bicycle crunches	16
+1065	52	cross arm crunches	16
+1066	52	superman	10
+1067	52	reverse crunches	10
+1068	52	leg raises	8
+1069	52	skipping without rope	30
+1070	52	standing bicycle crunches	14
+1071	52	cross arm crunches	16
+1072	52	superman	8
+1073	52	plank	30
+1074	52	seated side bend left	16
+1075	52	seated side bend right	16
+1076	52	cobra stretch	30
+1077	52	childs pose	30
+1078	53	jumping	10
+1079	53	high stepping	20
+1080	53	standing bicycle crunches	16
+1081	53	cross arm crunches	16
+1082	53	superman	10
+1083	53	reverse crunches	10
+1084	53	leg raises	8
+1085	53	skipping without rope	30
+1086	53	standing bicycle crunches	14
+1087	53	cross arm crunches	16
+1088	53	superman	8
+1089	53	plank	30
+1090	53	seated side bend left	16
+1091	53	seated side bend right	16
+1092	53	cobra stretch	30
+1093	53	childs pose	30
+1094	54	jumping	10
+1095	54	high stepping	20
+1096	54	standing bicycle crunches	16
+1097	54	cross arm crunches	16
+1098	54	superman	10
+1099	54	reverse crunches	10
+1100	54	leg raises	8
+1101	54	skipping without rope	30
+1102	54	standing bicycle crunches	14
+1103	54	cross arm crunches	16
+1104	54	superman	8
+1105	54	plank	30
+1106	54	seated side bend left	16
+1107	54	seated side bend right	16
+1108	54	cobra stretch	30
+1109	54	childs pose	30
+1110	55	jumping	10
+1111	55	high stepping	20
+1112	55	standing bicycle crunches	16
+1113	55	cross arm crunches	16
+1114	55	superman	10
+1115	55	reverse crunches	10
+1116	55	leg raises	8
+1117	55	skipping without rope	30
+1118	55	standing bicycle crunches	14
+1119	55	cross arm crunches	16
+1120	55	superman	8
+1121	55	plank	30
+1122	55	seated side bend left	16
+1123	55	seated side bend right	16
+1124	55	cobra stretch	30
+1125	55	childs pose	30
+1126	56	jumping	10
+1127	56	high stepping	20
+1128	56	standing bicycle crunches	16
+1129	56	cross arm crunches	16
+1130	56	superman	10
+1131	56	reverse crunches	10
+1132	56	leg raises	8
+1133	56	skipping without rope	30
+1134	56	standing bicycle crunches	14
+1135	56	cross arm crunches	16
+1136	56	superman	8
+1137	56	plank	30
+1138	56	seated side bend left	16
+1139	56	seated side bend right	16
+1140	56	cobra stretch	30
+1141	56	childs pose	30
+1142	56	jumping	10
+1143	56	high stepping	20
+1144	56	standing bicycle crunches	16
+1145	56	cross arm crunches	16
+1146	56	superman	10
+1147	56	reverse crunches	10
+1148	56	leg raises	8
+1149	56	skipping without rope	30
+1150	56	standing bicycle crunches	14
+1151	56	cross arm crunches	16
+1152	56	superman	8
+1153	56	plank	30
+1154	56	seated side bend left	16
+1155	56	seated side bend right	16
+1156	56	cobra stretch	30
+1157	56	childs pose	30
+1158	57	jumping	10
+1159	57	high stepping	20
+1160	57	standing bicycle crunches	16
+1161	57	cross arm crunches	16
+1162	57	superman	10
+1163	57	reverse crunches	10
+1164	57	leg raises	8
+1165	57	skipping without rope	30
+1166	57	standing bicycle crunches	14
+1167	57	cross arm crunches	16
+1168	57	superman	8
+1169	57	plank	30
+1170	57	seated side bend left	16
+1171	57	seated side bend right	16
+1172	57	cobra stretch	30
+1173	57	childs pose	30
+1174	58	jumping	10
+1175	58	high stepping	20
+1176	58	standing bicycle crunches	16
+1177	58	cross arm crunches	16
+1178	58	superman	10
+1179	58	reverse crunches	10
+1180	58	leg raises	8
+1181	58	skipping without rope	30
+1182	58	standing bicycle crunches	14
+1183	58	cross arm crunches	16
+1184	58	superman	8
+1185	58	plank	30
+1186	58	seated side bend left	16
+1187	58	seated side bend right	16
+1188	58	cobra stretch	30
+1189	58	childs pose	30
+1190	59	jumping	10
+1191	59	high stepping	20
+1192	59	standing bicycle crunches	16
+1193	59	cross arm crunches	16
+1194	59	superman	10
+1195	59	reverse crunches	10
+1196	59	leg raises	8
+1197	59	skipping without rope	30
+1198	59	standing bicycle crunches	14
+1199	59	cross arm crunches	16
+1200	59	superman	8
+1201	59	plank	30
+1202	59	seated side bend left	16
+1203	59	seated side bend right	16
+1204	59	cobra stretch	30
+1205	59	childs pose	30
+	60	jumping	10
+	60	high stepping	20
+	60	standing bicycle crunches	16
+	60	cross arm crunches	16
+	60	superman	10
+	60	reverse crunches	10
+	60	leg raises	8
+	60	skipping without rope	30
+	60	standing bicycle crunches	14
+	60	cross arm crunches	16
+	60	superman	8
+	60	plank	30
+	60	seated side bend left	16
+	60	seated side bend right	16
+	60	cobra stretch	30
+	60	childs pose	30
+	61	jumping	10
+	61	high stepping	20
+	61	standing bicycle crunches	16
+	61	cross arm crunches	16
+	61	superman	10
+	61	reverse crunches	10
+	61	leg raises	8
+	61	skipping without rope	30
+	61	standing bicycle crunches	14
+	61	cross arm crunches	16
+	61	superman	8
+	61	plank	30
+	61	seated side bend left	16
+	61	seated side bend right	16
+	61	cobra stretch	30
+	61	childs pose	30
+	62	jumping	10
+	62	high stepping	20
+	62	standing bicycle crunches	16
+	62	cross arm crunches	16
+	62	superman	10
+	62	reverse crunches	10
+	62	leg raises	8
+	62	skipping without rope	30
+	62	standing bicycle crunches	14
+	62	cross arm crunches	16
+	62	superman	8
+	62	plank	30
+	62	seated side bend left	16
+	62	seated side bend right	16
+	62	cobra stretch	30
+	62	childs pose	30
+	63	jumping	10
+	63	high stepping	20
+	63	standing bicycle crunches	16
+	63	cross arm crunches	16
+	63	superman	10
+	63	reverse crunches	10
+	63	leg raises	8
+	63	skipping without rope	30
+	63	standing bicycle crunches	14
+	63	cross arm crunches	16
+	63	superman	8
+	63	plank	30
+	63	seated side bend left	16
+	63	seated side bend right	16
+	63	cobra stretch	30
+	63	childs pose	30
+	64	jumping	10
+	64	high stepping	20
+	64	standing bicycle crunches	16
+	64	cross arm crunches	16
+	64	superman	10
+	64	reverse crunches	10
+	64	leg raises	8
+	64	skipping without rope	30
+	64	standing bicycle crunches	14
+	64	cross arm crunches	16
+	64	superman	8
+	64	plank	30
+	64	seated side bend left	16
+	64	seated side bend right	16
+	64	cobra stretch	30
+	64	childs pose	30
+	65	jumping	10
+	65	high stepping	20
+	65	standing bicycle crunches	16
+	65	cross arm crunches	16
+	65	superman	10
+	65	reverse crunches	10
+	65	leg raises	8
+	65	skipping without rope	30
+	65	standing bicycle crunches	14
+	65	cross arm crunches	16
+	65	superman	8
+	65	plank	30
+	65	seated side bend left	16
+	65	seated side bend right	16
+	65	cobra stretch	30
+	65	childs pose	30
+	66	jumping	10
+	66	high stepping	20
+	66	standing bicycle crunches	16
+	66	cross arm crunches	16
+	66	superman	10
+	66	reverse crunches	10
+	66	leg raises	8
+	66	skipping without rope	30
+	66	standing bicycle crunches	14
+	66	cross arm crunches	16
+	66	superman	8
+	66	plank	30
+	66	seated side bend left	16
+	66	seated side bend right	16
+	66	cobra stretch	30
+	66	childs pose	30
+	67	jumping	10
+	67	high stepping	20
+	67	standing bicycle crunches	16
+	67	cross arm crunches	16
+	67	superman	10
+	67	reverse crunches	10
+	67	leg raises	8
+	67	skipping without rope	30
+	67	standing bicycle crunches	14
+	67	cross arm crunches	16
+	67	superman	8
+	67	plank	30
+	67	seated side bend left	16
+	67	seated side bend right	16
+	67	cobra stretch	30
+	67	childs pose	30
+	68	jumping	10
+	68	high stepping	20
+	68	standing bicycle crunches	16
+	68	cross arm crunches	16
+	68	superman	10
+	68	reverse crunches	10
+	68	leg raises	8
+	68	skipping without rope	30
+	68	standing bicycle crunches	14
+	68	cross arm crunches	16
+	68	superman	8
+	68	plank	30
+	68	seated side bend left	16
+	68	seated side bend right	16
+	68	cobra stretch	30
+	68	childs pose	30
+	69	jumping	10
+	69	high stepping	20
+	69	standing bicycle crunches	16
+	69	cross arm crunches	16
+	69	superman	10
+	69	reverse crunches	10
+	69	leg raises	8
+	69	skipping without rope	30
+	69	standing bicycle crunches	14
+	69	cross arm crunches	16
+	69	superman	8
+	69	plank	30
+	69	seated side bend left	16
+	69	seated side bend right	16
+	69	cobra stretch	30
+	69	childs pose	30
+	70	jumping	10
+	70	high stepping	20
+	70	standing bicycle crunches	16
+	70	cross arm crunches	16
+	70	superman	10
+	70	reverse crunches	10
+	70	leg raises	8
+	70	skipping without rope	30
+	70	standing bicycle crunches	14
+	70	cross arm crunches	16
+	70	superman	8
+	70	plank	30
+	70	seated side bend left	16
+	70	seated side bend right	16
+	70	cobra stretch	30
+	70	childs pose	30
+	71	jumping	10
+	71	high stepping	20
+	71	standing bicycle crunches	16
+	71	cross arm crunches	16
+	71	superman	10
+	71	reverse crunches	10
+	71	leg raises	8
+	71	skipping without rope	30
+	71	standing bicycle crunches	14
+	71	cross arm crunches	16
+	71	superman	8
+	71	plank	30
+	71	seated side bend left	16
+	71	seated side bend right	16
+	71	cobra stretch	30
+	71	childs pose	30
+	72	jumping	10
+	72	high stepping	20
+	72	standing bicycle crunches	16
+	72	cross arm crunches	16
+	72	superman	10
+	72	reverse crunches	10
+	72	leg raises	8
+	72	skipping without rope	30
+	72	standing bicycle crunches	14
+	72	cross arm crunches	16
+	72	superman	8
+	72	plank	30
+	72	seated side bend left	16
+	72	seated side bend right	16
+	72	cobra stretch	30
+	72	childs pose	30
+	73	jumping	10
+	73	high stepping	20
+	73	standing bicycle crunches	16
+	73	cross arm crunches	16
+	73	superman	10
+	73	reverse crunches	10
+	73	leg raises	8
+	73	skipping without rope	30
+	73	standing bicycle crunches	14
+	73	cross arm crunches	16
+	73	superman	8
+	73	plank	30
+	73	seated side bend left	16
+	73	seated side bend right	16
+	73	cobra stretch	30
+	73	childs pose	30
+	74	jumping	10
+	74	high stepping	20
+	74	standing bicycle crunches	16
+	74	cross arm crunches	16
+	74	superman	10
+	74	reverse crunches	10
+	74	leg raises	8
+	74	skipping without rope	30
+	74	standing bicycle crunches	14
+	74	cross arm crunches	16
+	74	superman	8
+	74	plank	30
+	74	seated side bend left	16
+	74	seated side bend right	16
+	74	cobra stretch	30
+	74	childs pose	30
+	75	jumping	10
+	75	high stepping	20
+	75	standing bicycle crunches	16
+	75	cross arm crunches	16
+	75	superman	10
+	75	reverse crunches	10
+	75	leg raises	8
+	75	skipping without rope	30
+	75	standing bicycle crunches	14
+	75	cross arm crunches	16
+	75	superman	8
+	75	plank	30
+	75	seated side bend left	16
+	75	seated side bend right	16
+	75	cobra stretch	30
+	75	childs pose	30
+	76	jumping	10
+	76	high stepping	20
+	76	standing bicycle crunches	16
+	76	cross arm crunches	16
+	76	superman	10
+	76	reverse crunches	10
+	76	leg raises	8
+	76	skipping without rope	30
+	76	standing bicycle crunches	14
+	76	cross arm crunches	16
+	76	superman	8
+	76	plank	30
+	76	seated side bend left	16
+	76	seated side bend right	16
+	76	cobra stretch	30
+	76	childs pose	30
+	77	jumping	10
+	77	high stepping	20
+	77	standing bicycle crunches	16
+	77	cross arm crunches	16
+	77	superman	10
+	77	reverse crunches	10
+	77	leg raises	8
+	77	skipping without rope	30
+	77	standing bicycle crunches	14
+	77	cross arm crunches	16
+	77	superman	8
+	77	plank	30
+	77	seated side bend left	16
+	77	seated side bend right	16
+	77	cobra stretch	30
+	77	childs pose	30
+	78	jumping	10
+	78	high stepping	20
+	78	standing bicycle crunches	16
+	78	cross arm crunches	16
+	78	superman	10
+	78	reverse crunches	10
+	78	leg raises	8
+	78	skipping without rope	30
+	78	standing bicycle crunches	14
+	78	cross arm crunches	16
+	78	superman	8
+	78	plank	30
+	78	seated side bend left	16
+	78	seated side bend right	16
+	78	cobra stretch	30
+	78	childs pose	30
+	79	jumping	10
+	79	high stepping	20
+	79	standing bicycle crunches	16
+	79	cross arm crunches	16
+	79	superman	10
+	79	reverse crunches	10
+	79	leg raises	8
+	79	skipping without rope	30
+	79	standing bicycle crunches	14
+	79	cross arm crunches	16
+	79	superman	8
+	79	plank	30
+	79	seated side bend left	16
+	79	seated side bend right	16
+	79	cobra stretch	30
+	79	childs pose	30
+	80	jumping	10
+	80	high stepping	20
+	80	standing bicycle crunches	16
+	80	cross arm crunches	16
+	80	superman	10
+	80	reverse crunches	10
+	80	leg raises	8
+	80	skipping without rope	30
+	80	standing bicycle crunches	14
+	80	cross arm crunches	16
+	80	superman	8
+	80	plank	30
+	80	seated side bend left	16
+	80	seated side bend right	16
+	80	cobra stretch	30
+	80	childs pose	30
+	81	jumping	10
+	81	high stepping	20
+	81	standing bicycle crunches	16
+	81	cross arm crunches	16
+	81	superman	10
+	81	reverse crunches	10
+	81	leg raises	8
+	81	skipping without rope	30
+	81	standing bicycle crunches	14
+	81	cross arm crunches	16
+	81	superman	8
+	81	plank	30
+	81	seated side bend left	16
+	81	seated side bend right	16
+	81	cobra stretch	30
+	81	childs pose	30
+	82	jumping	10
+	82	high stepping	20
+	82	standing bicycle crunches	16
+	82	cross arm crunches	16
+	82	superman	10
+	82	reverse crunches	10
+	82	leg raises	8
+	82	skipping without rope	30
+	82	standing bicycle crunches	14
+	82	cross arm crunches	16
+	82	superman	8
+	82	plank	30
+	82	seated side bend left	16
+	82	seated side bend right	16
+	82	cobra stretch	30
+	82	childs pose	30
+	83	jumping	10
+	83	high stepping	20
+	83	standing bicycle crunches	16
+	83	cross arm crunches	16
+	83	superman	10
+	83	reverse crunches	10
+	83	leg raises	8
+	83	skipping without rope	30
+	83	standing bicycle crunches	14
+	83	cross arm crunches	16
+	83	superman	8
+	83	plank	30
+	83	seated side bend left	16
+	83	seated side bend right	16
+	83	cobra stretch	30
+	83	childs pose	30
+	84	jumping	10
+	84	high stepping	20
+	84	standing bicycle crunches	16
+	84	cross arm crunches	16
+	84	superman	10
+	84	reverse crunches	10
+	84	leg raises	8
+	84	skipping without rope	30
+	84	standing bicycle crunches	14
+	84	cross arm crunches	16
+	84	superman	8
+	84	plank	30
+	84	seated side bend left	16
+	84	seated side bend right	16
+	84	cobra stretch	30
+	84	childs pose	30
+	85	jumping	10
+	85	high stepping	20
+	85	standing bicycle crunches	16
+	85	cross arm crunches	16
+	85	superman	10
+	85	reverse crunches	10
+	85	leg raises	8
+	85	skipping without rope	30
+	85	standing bicycle crunches	14
+	85	cross arm crunches	16
+	85	superman	8
+	85	plank	30
+	85	seated side bend left	16
+	85	seated side bend right	16
+	85	cobra stretch	30
+	85	childs pose	30
+	86	jumping	10
+	86	high stepping	20
+	86	standing bicycle crunches	16
+	86	cross arm crunches	16
+	86	superman	10
+	86	reverse crunches	10
+	86	leg raises	8
+	86	skipping without rope	30
+	86	standing bicycle crunches	14
+	86	cross arm crunches	16
+	86	superman	8
+	86	plank	30
+	86	seated side bend left	16
+	86	seated side bend right	16
+	86	cobra stretch	30
+	86	childs pose	30
+	87	jumping	10
+	87	high stepping	20
+	87	standing bicycle crunches	16
+	87	cross arm crunches	16
+	87	superman	10
+	87	reverse crunches	10
+	87	leg raises	8
+	87	skipping without rope	30
+	87	standing bicycle crunches	14
+	87	cross arm crunches	16
+	87	superman	8
+	87	plank	30
+	87	seated side bend left	16
+	87	seated side bend right	16
+	87	cobra stretch	30
+	87	childs pose	30
+	88	jumping	10
+	88	high stepping	20
+	88	standing bicycle crunches	16
+	88	cross arm crunches	16
+	88	superman	10
+	88	reverse crunches	10
+	88	leg raises	8
+	88	skipping without rope	30
+	88	standing bicycle crunches	14
+	88	cross arm crunches	16
+	88	superman	8
+	88	plank	30
+	88	seated side bend left	16
+	88	seated side bend right	16
+	88	cobra stretch	30
+	88	childs pose	30
+	89	jumping	10
+	89	high stepping	20
+	89	standing bicycle crunches	16
+	89	cross arm crunches	16
+	89	superman	10
+	89	reverse crunches	10
+	89	leg raises	8
+	89	skipping without rope	30
+	89	standing bicycle crunches	14
+	89	cross arm crunches	16
+	89	superman	8
+	89	plank	30
+	89	seated side bend left	16
+	89	seated side bend right	16
+	89	cobra stretch	30
+	89	childs pose	30
+	90	skipping without rope	30
+	90	squat pulses	30
+	90	straight leg fire hydrant left	10
+	90	straight leg fire hydrant right	10
+	90	glute kick back right	10
+	90	glute kick back left	10
+	90	lunges	20
+	90	pendulum swings	30
+	90	walking squats	30
+	90	fast spider lunges	30
+	90	pendulum swings	30
+	90	lunges	16
+	90	walking squats	30
+	90	left quad stretch with wall	30
+	90	right quad stretch with wall	30
+	90	adductor stretch in standing	30
+	91	skipping without rope	30
+	91	squat pulses	30
+	91	straight leg fire hydrant left	10
+	91	straight leg fire hydrant right	10
+	91	glute kick back right	10
+	91	glute kick back left	10
+	91	lunges	20
+	91	pendulum swings	30
+	91	walking squats	30
+	91	fast spider lunges	30
+	91	pendulum swings	30
+	91	lunges	16
+	91	walking squats	30
+	91	left quad stretch with wall	30
+	91	right quad stretch with wall	30
+	91	adductor stretch in standing	30
+	92	skipping without rope	30
+	92	squat pulses	30
+	92	straight leg fire hydrant left	10
+	92	straight leg fire hydrant right	10
+	92	glute kick back right	10
+	92	glute kick back left	10
+	92	lunges	20
+	92	pendulum swings	30
+	92	walking squats	30
+	92	fast spider lunges	30
+	92	pendulum swings	30
+	92	lunges	16
+	92	walking squats	30
+	92	left quad stretch with wall	30
+	92	right quad stretch with wall	30
+	92	adductor stretch in standing	30
+	93	skipping without rope	30
+	93	squat pulses	30
+	93	straight leg fire hydrant left	10
+	93	straight leg fire hydrant right	10
+	93	glute kick back right	10
+	93	glute kick back left	10
+	93	lunges	20
+	93	pendulum swings	30
+	93	walking squats	30
+	93	fast spider lunges	30
+	93	pendulum swings	30
+	93	lunges	16
+	93	walking squats	30
+	93	left quad stretch with wall	30
+	93	right quad stretch with wall	30
+	93	adductor stretch in standing	30
+	94	skipping without rope	30
+	94	squat pulses	30
+	94	straight leg fire hydrant left	10
+	94	straight leg fire hydrant right	10
+	94	glute kick back right	10
+	94	glute kick back left	10
+	94	lunges	20
+	94	pendulum swings	30
+	94	walking squats	30
+	94	fast spider lunges	30
+	94	pendulum swings	30
+	94	lunges	16
+	94	walking squats	30
+	94	left quad stretch with wall	30
+	94	right quad stretch with wall	30
+	94	adductor stretch in standing	30
+	95	skipping without rope	30
+	95	squat pulses	30
+	95	straight leg fire hydrant left	10
+	95	straight leg fire hydrant right	10
+	95	glute kick back right	10
+	95	glute kick back left	10
+	95	lunges	20
+	95	pendulum swings	30
+	95	walking squats	30
+	95	fast spider lunges	30
+	95	pendulum swings	30
+	95	lunges	16
+	95	walking squats	30
+	95	left quad stretch with wall	30
+	95	right quad stretch with wall	30
+	95	adductor stretch in standing	30
+	96	skipping without rope	30
+	96	squat pulses	30
+	96	straight leg fire hydrant left	10
+	96	straight leg fire hydrant right	10
+	96	glute kick back right	10
+	96	glute kick back left	10
+	96	lunges	20
+	96	pendulum swings	30
+	96	walking squats	30
+	96	fast spider lunges	30
+	96	pendulum swings	30
+	96	lunges	16
+	96	walking squats	30
+	96	left quad stretch with wall	30
+	96	right quad stretch with wall	30
+	96	adductor stretch in standing	30
+	97	skipping without rope	30
+	97	squat pulses	30
+	97	straight leg fire hydrant left	10
+	97	straight leg fire hydrant right	10
+	97	glute kick back right	10
+	97	glute kick back left	10
+	97	lunges	20
+	97	pendulum swings	30
+	97	walking squats	30
+	97	fast spider lunges	30
+	97	pendulum swings	30
+	97	lunges	16
+	97	walking squats	30
+	97	left quad stretch with wall	30
+	97	right quad stretch with wall	30
+	97	adductor stretch in standing	30
+	98	skipping without rope	30
+	98	squat pulses	30
+	98	straight leg fire hydrant left	10
+	98	straight leg fire hydrant right	10
+	98	glute kick back right	10
+	98	glute kick back left	10
+	98	lunges	20
+	98	pendulum swings	30
+	98	walking squats	30
+	98	fast spider lunges	30
+	98	pendulum swings	30
+	98	lunges	16
+	98	walking squats	30
+	98	left quad stretch with wall	30
+	98	right quad stretch with wall	30
+	98	adductor stretch in standing	30
+	99	skipping without rope	30
+	99	squat pulses	30
+	99	straight leg fire hydrant left	10
+	99	straight leg fire hydrant right	10
+	99	glute kick back right	10
+	99	glute kick back left	10
+	99	lunges	20
+	99	pendulum swings	30
+	99	walking squats	30
+	99	fast spider lunges	30
+	99	pendulum swings	30
+	99	lunges	16
+	99	walking squats	30
+	99	left quad stretch with wall	30
+	99	right quad stretch with wall	30
+	99	adductor stretch in standing	30
+	100	skipping without rope	30
+	100	squat pulses	30
+	100	straight leg fire hydrant left	10
+	100	straight leg fire hydrant right	10
+	100	glute kick back right	10
+	100	glute kick back left	10
+	100	lunges	20
+	100	pendulum swings	30
+	100	walking squats	30
+	100	fast spider lunges	30
+	100	pendulum swings	30
+	100	lunges	16
+	100	walking squats	30
+	100	left quad stretch with wall	30
+	100	right quad stretch with wall	30
+	100	adductor stretch in standing	30
+	101	skipping without rope	30
+	101	squat pulses	30
+	101	straight leg fire hydrant left	10
+	101	straight leg fire hydrant right	10
+	101	glute kick back right	10
+	101	glute kick back left	10
+	101	lunges	20
+	101	pendulum swings	30
+	101	walking squats	30
+	101	fast spider lunges	30
+	101	pendulum swings	30
+	101	lunges	16
+	101	walking squats	30
+	101	left quad stretch with wall	30
+	101	right quad stretch with wall	30
+	101	adductor stretch in standing	30
+	102	skipping without rope	30
+	102	squat pulses	30
+	102	straight leg fire hydrant left	10
+	102	straight leg fire hydrant right	10
+	102	glute kick back right	10
+	102	glute kick back left	10
+	102	lunges	20
+	102	pendulum swings	30
+	102	walking squats	30
+	102	fast spider lunges	30
+	102	pendulum swings	30
+	102	lunges	16
+	102	walking squats	30
+	102	left quad stretch with wall	30
+	102	right quad stretch with wall	30
+	102	adductor stretch in standing	30
+	103	skipping without rope	30
+	103	squat pulses	30
+	103	straight leg fire hydrant left	10
+	103	straight leg fire hydrant right	10
+	103	glute kick back right	10
+	103	glute kick back left	10
+	103	lunges	20
+	103	pendulum swings	30
+	103	walking squats	30
+	103	fast spider lunges	30
+	103	pendulum swings	30
+	103	lunges	16
+	103	walking squats	30
+	103	left quad stretch with wall	30
+	103	right quad stretch with wall	30
+	103	adductor stretch in standing	30
+	104	skipping without rope	30
+	104	squat pulses	30
+	104	straight leg fire hydrant left	10
+	104	straight leg fire hydrant right	10
+	104	glute kick back right	10
+	104	glute kick back left	10
+	104	lunges	20
+	104	pendulum swings	30
+	104	walking squats	30
+	104	fast spider lunges	30
+	104	pendulum swings	30
+	104	lunges	16
+	104	walking squats	30
+	104	left quad stretch with wall	30
+	104	right quad stretch with wall	30
+	104	adductor stretch in standing	30
+	105	skipping without rope	30
+	105	squat pulses	30
+	105	straight leg fire hydrant left	10
+	105	straight leg fire hydrant right	10
+	105	glute kick back right	10
+	105	glute kick back left	10
+	105	lunges	20
+	105	pendulum swings	30
+	105	walking squats	30
+	105	fast spider lunges	30
+	105	pendulum swings	30
+	105	lunges	16
+	105	walking squats	30
+	105	left quad stretch with wall	30
+	105	right quad stretch with wall	30
+	105	adductor stretch in standing	30
+	106	skipping without rope	30
+	106	squat pulses	30
+	106	straight leg fire hydrant left	10
+	106	straight leg fire hydrant right	10
+	106	glute kick back right	10
+	106	glute kick back left	10
+	106	lunges	20
+	106	pendulum swings	30
+	106	walking squats	30
+	106	fast spider lunges	30
+	106	pendulum swings	30
+	106	lunges	16
+	106	walking squats	30
+	106	left quad stretch with wall	30
+	106	right quad stretch with wall	30
+	106	adductor stretch in standing	30
+	107	skipping without rope	30
+	107	squat pulses	30
+	107	straight leg fire hydrant left	10
+	107	straight leg fire hydrant right	10
+	107	glute kick back right	10
+	107	glute kick back left	10
+	107	lunges	20
+	107	pendulum swings	30
+	107	walking squats	30
+	107	fast spider lunges	30
+	107	pendulum swings	30
+	107	lunges	16
+	107	walking squats	30
+	107	left quad stretch with wall	30
+	107	right quad stretch with wall	30
+	107	adductor stretch in standing	30
+	108	skipping without rope	30
+	108	squat pulses	30
+	108	straight leg fire hydrant left	10
+	108	straight leg fire hydrant right	10
+	108	glute kick back right	10
+	108	glute kick back left	10
+	108	lunges	20
+	108	pendulum swings	30
+	108	walking squats	30
+	108	fast spider lunges	30
+	108	pendulum swings	30
+	108	lunges	16
+	108	walking squats	30
+	108	left quad stretch with wall	30
+	108	right quad stretch with wall	30
+	108	adductor stretch in standing	30
+	109	skipping without rope	30
+	109	squat pulses	30
+	109	straight leg fire hydrant left	10
+	109	straight leg fire hydrant right	10
+	109	glute kick back right	10
+	109	glute kick back left	10
+	109	lunges	20
+	109	pendulum swings	30
+	109	walking squats	30
+	109	fast spider lunges	30
+	109	pendulum swings	30
+	109	lunges	16
+	109	walking squats	30
+	109	left quad stretch with wall	30
+	109	right quad stretch with wall	30
+	109	adductor stretch in standing	30
+	110	skipping without rope	30
+	110	squat pulses	30
+	110	straight leg fire hydrant left	10
+	110	straight leg fire hydrant right	10
+	110	glute kick back right	10
+	110	glute kick back left	10
+	110	lunges	20
+	110	pendulum swings	30
+	110	walking squats	30
+	110	fast spider lunges	30
+	110	pendulum swings	30
+	110	lunges	16
+	110	walking squats	30
+	110	left quad stretch with wall	30
+	110	right quad stretch with wall	30
+	110	adductor stretch in standing	30
+	111	skipping without rope	30
+	111	squat pulses	30
+	111	straight leg fire hydrant left	10
+	111	straight leg fire hydrant right	10
+	111	glute kick back right	10
+	111	glute kick back left	10
+	111	lunges	20
+	111	pendulum swings	30
+	111	walking squats	30
+	111	fast spider lunges	30
+	111	pendulum swings	30
+	111	lunges	16
+	111	walking squats	30
+	111	left quad stretch with wall	30
+	111	right quad stretch with wall	30
+	111	adductor stretch in standing	30
+	112	skipping without rope	30
+	112	squat pulses	30
+	112	straight leg fire hydrant left	10
+	112	straight leg fire hydrant right	10
+	112	glute kick back right	10
+	112	glute kick back left	10
+	112	lunges	20
+	112	pendulum swings	30
+	112	walking squats	30
+	112	fast spider lunges	30
+	112	pendulum swings	30
+	112	lunges	16
+	112	walking squats	30
+	112	left quad stretch with wall	30
+	112	right quad stretch with wall	30
+	112	adductor stretch in standing	30
+	113	skipping without rope	30
+	113	squat pulses	30
+	113	straight leg fire hydrant left	10
+	113	straight leg fire hydrant right	10
+	113	glute kick back right	10
+	113	glute kick back left	10
+	113	lunges	20
+	113	pendulum swings	30
+	113	walking squats	30
+	113	fast spider lunges	30
+	113	pendulum swings	30
+	113	lunges	16
+	113	walking squats	30
+	113	left quad stretch with wall	30
+	113	right quad stretch with wall	30
+	113	adductor stretch in standing	30
+	114	skipping without rope	30
+	114	squat pulses	30
+	114	straight leg fire hydrant left	10
+	114	straight leg fire hydrant right	10
+	114	glute kick back right	10
+	114	glute kick back left	10
+	114	lunges	20
+	114	pendulum swings	30
+	114	walking squats	30
+	114	fast spider lunges	30
+	114	pendulum swings	30
+	114	lunges	16
+	114	walking squats	30
+	114	left quad stretch with wall	30
+	114	right quad stretch with wall	30
+	114	adductor stretch in standing	30
+	115	skipping without rope	30
+	115	squat pulses	30
+	115	straight leg fire hydrant left	10
+	115	straight leg fire hydrant right	10
+	115	glute kick back right	10
+	115	glute kick back left	10
+	115	lunges	20
+	115	pendulum swings	30
+	115	walking squats	30
+	115	fast spider lunges	30
+	115	pendulum swings	30
+	115	lunges	16
+	115	walking squats	30
+	115	left quad stretch with wall	30
+	115	right quad stretch with wall	30
+	115	adductor stretch in standing	30
+	116	skipping without rope	30
+	116	squat pulses	30
+	116	straight leg fire hydrant left	10
+	116	straight leg fire hydrant right	10
+	116	glute kick back right	10
+	116	glute kick back left	10
+	116	lunges	20
+	116	pendulum swings	30
+	116	walking squats	30
+	116	fast spider lunges	30
+	116	pendulum swings	30
+	116	lunges	16
+	116	walking squats	30
+	116	left quad stretch with wall	30
+	116	right quad stretch with wall	30
+	116	adductor stretch in standing	30
+	117	skipping without rope	30
+	117	squat pulses	30
+	117	straight leg fire hydrant left	10
+	117	straight leg fire hydrant right	10
+	117	glute kick back right	10
+	117	glute kick back left	10
+	117	lunges	20
+	117	pendulum swings	30
+	117	walking squats	30
+	117	fast spider lunges	30
+	117	pendulum swings	30
+	117	lunges	16
+	117	walking squats	30
+	117	left quad stretch with wall	30
+	117	right quad stretch with wall	30
+	117	adductor stretch in standing	30
+	118	skipping without rope	30
+	118	squat pulses	30
+	118	straight leg fire hydrant left	10
+	118	straight leg fire hydrant right	10
+	118	glute kick back right	10
+	118	glute kick back left	10
+	118	lunges	20
+	118	pendulum swings	30
+	118	walking squats	30
+	118	fast spider lunges	30
+	118	pendulum swings	30
+	118	lunges	16
+	118	walking squats	30
+	118	left quad stretch with wall	30
+	118	right quad stretch with wall	30
+	118	adductor stretch in standing	30
+	119	skipping without rope	30
+	119	squat pulses	30
+	119	straight leg fire hydrant left	10
+	119	straight leg fire hydrant right	10
+	119	glute kick back right	10
+	119	glute kick back left	10
+	119	lunges	20
+	119	pendulum swings	30
+	119	walking squats	30
+	119	fast spider lunges	30
+	119	pendulum swings	30
+	119	lunges	16
+	119	walking squats	30
+	119	left quad stretch with wall	30
+	119	right quad stretch with wall	30
+	119	adductor stretch in standing	30
+	120	skipping without rope	30
+	120	squat pulses	30
+	120	straight leg fire hydrant left	10
+	120	straight leg fire hydrant right	10
+	120	glute kick back right	10
+	120	glute kick back left	10
+	120	lunges	20
+	120	pendulum swings	30
+	120	walking squats	30
+	120	fast spider lunges	30
+	120	pendulum swings	30
+	120	lunges	16
+	120	walking squats	30
+	120	left quad stretch with wall	30
+	120	right quad stretch with wall	30
+	120	adductor stretch in standing	30
+	121	skipping without rope	30
+	121	squat pulses	30
+	121	straight leg fire hydrant left	10
+	121	straight leg fire hydrant right	10
+	121	glute kick back right	10
+	121	glute kick back left	10
+	121	lunges	20
+	121	pendulum swings	30
+	121	walking squats	30
+	121	fast spider lunges	30
+	121	pendulum swings	30
+	121	lunges	16
+	121	walking squats	30
+	121	left quad stretch with wall	30
+	121	right quad stretch with wall	30
+	121	adductor stretch in standing	30
+	122	skipping without rope	30
+	122	squat pulses	30
+	122	straight leg fire hydrant left	10
+	122	straight leg fire hydrant right	10
+	122	glute kick back right	10
+	122	glute kick back left	10
+	122	lunges	20
+	122	pendulum swings	30
+	122	walking squats	30
+	122	fast spider lunges	30
+	122	pendulum swings	30
+	122	lunges	16
+	122	walking squats	30
+	122	left quad stretch with wall	30
+	122	right quad stretch with wall	30
+	122	adductor stretch in standing	30
+	123	skipping without rope	30
+	123	squat pulses	30
+	123	straight leg fire hydrant left	10
+	123	straight leg fire hydrant right	10
+	123	glute kick back right	10
+	123	glute kick back left	10
+	123	lunges	20
+	123	pendulum swings	30
+	123	walking squats	30
+	123	fast spider lunges	30
+	123	pendulum swings	30
+	123	lunges	16
+	123	walking squats	30
+	123	left quad stretch with wall	30
+	123	right quad stretch with wall	30
+	123	adductor stretch in standing	30
+	124	skipping without rope	30
+	124	squat pulses	30
+	124	straight leg fire hydrant left	10
+	124	straight leg fire hydrant right	10
+	124	glute kick back right	10
+	124	glute kick back left	10
+	124	lunges	20
+	124	pendulum swings	30
+	124	walking squats	30
+	124	fast spider lunges	30
+	124	pendulum swings	30
+	124	lunges	16
+	124	walking squats	30
+	124	left quad stretch with wall	30
+	124	right quad stretch with wall	30
+	124	adductor stretch in standing	30
+	125	skipping without rope	30
+	125	squat pulses	30
+	125	straight leg fire hydrant left	10
+	125	straight leg fire hydrant right	10
+	125	glute kick back right	10
+	125	glute kick back left	10
+	125	lunges	20
+	125	pendulum swings	30
+	125	walking squats	30
+	125	fast spider lunges	30
+	125	pendulum swings	30
+	125	lunges	16
+	125	walking squats	30
+	125	left quad stretch with wall	30
+	125	right quad stretch with wall	30
+	125	adductor stretch in standing	30
+	126	skipping without rope	30
+	126	squat pulses	30
+	126	straight leg fire hydrant left	10
+	126	straight leg fire hydrant right	10
+	126	glute kick back right	10
+	126	glute kick back left	10
+	126	lunges	20
+	126	pendulum swings	30
+	126	walking squats	30
+	126	fast spider lunges	30
+	126	pendulum swings	30
+	126	lunges	16
+	126	walking squats	30
+	126	left quad stretch with wall	30
+	126	right quad stretch with wall	30
+	126	adductor stretch in standing	30
+	127	skipping without rope	30
+	127	squat pulses	30
+	127	straight leg fire hydrant left	10
+	127	straight leg fire hydrant right	10
+	127	glute kick back right	10
+	127	glute kick back left	10
+	127	lunges	20
+	127	pendulum swings	30
+	127	walking squats	30
+	127	fast spider lunges	30
+	127	pendulum swings	30
+	127	lunges	16
+	127	walking squats	30
+	127	left quad stretch with wall	30
+	127	right quad stretch with wall	30
+	127	adductor stretch in standing	30
+	128	skipping without rope	30
+	128	squat pulses	30
+	128	straight leg fire hydrant left	10
+	128	straight leg fire hydrant right	10
+	128	glute kick back right	10
+	128	glute kick back left	10
+	128	lunges	20
+	128	pendulum swings	30
+	128	walking squats	30
+	128	fast spider lunges	30
+	128	pendulum swings	30
+	128	lunges	16
+	128	walking squats	30
+	128	left quad stretch with wall	30
+	128	right quad stretch with wall	30
+	128	adductor stretch in standing	30
+	129	skipping without rope	30
+	129	squat pulses	30
+	129	straight leg fire hydrant left	10
+	129	straight leg fire hydrant right	10
+	129	glute kick back right	10
+	129	glute kick back left	10
+	129	lunges	20
+	129	pendulum swings	30
+	129	walking squats	30
+	129	fast spider lunges	30
+	129	pendulum swings	30
+	129	lunges	16
+	129	walking squats	30
+	129	left quad stretch with wall	30
+	129	right quad stretch with wall	30
+	129	adductor stretch in standing	30
+	130	skipping without rope	30
+	130	squat pulses	30
+	130	straight leg fire hydrant left	10
+	130	straight leg fire hydrant right	10
+	130	glute kick back right	10
+	130	glute kick back left	10
+	130	lunges	20
+	130	pendulum swings	30
+	130	walking squats	30
+	130	fast spider lunges	30
+	130	pendulum swings	30
+	130	lunges	16
+	130	walking squats	30
+	130	left quad stretch with wall	30
+	130	right quad stretch with wall	30
+	130	adductor stretch in standing	30
+	131	skipping without rope	30
+	131	squat pulses	30
+	131	straight leg fire hydrant left	10
+	131	straight leg fire hydrant right	10
+	131	glute kick back right	10
+	131	glute kick back left	10
+	131	lunges	20
+	131	pendulum swings	30
+	131	walking squats	30
+	131	fast spider lunges	30
+	131	pendulum swings	30
+	131	lunges	16
+	131	walking squats	30
+	131	left quad stretch with wall	30
+	131	right quad stretch with wall	30
+	131	adductor stretch in standing	30
+	132	skipping without rope	30
+	132	squat pulses	30
+	132	straight leg fire hydrant left	10
+	132	straight leg fire hydrant right	10
+	132	glute kick back right	10
+	132	glute kick back left	10
+	132	lunges	20
+	132	pendulum swings	30
+	132	walking squats	30
+	132	fast spider lunges	30
+	132	pendulum swings	30
+	132	lunges	16
+	132	walking squats	30
+	132	left quad stretch with wall	30
+	132	right quad stretch with wall	30
+	132	adductor stretch in standing	30
+	133	skipping without rope	30
+	133	squat pulses	30
+	133	straight leg fire hydrant left	10
+	133	straight leg fire hydrant right	10
+	133	glute kick back right	10
+	133	glute kick back left	10
+	133	lunges	20
+	133	pendulum swings	30
+	133	walking squats	30
+	133	fast spider lunges	30
+	133	pendulum swings	30
+	133	lunges	16
+	133	walking squats	30
+	133	left quad stretch with wall	30
+	133	right quad stretch with wall	30
+	133	adductor stretch in standing	30
+	134	skipping without rope	30
+	134	squat pulses	30
+	134	straight leg fire hydrant left	10
+	134	straight leg fire hydrant right	10
+	134	glute kick back right	10
+	134	glute kick back left	10
+	134	lunges	20
+	134	pendulum swings	30
+	134	walking squats	30
+	134	fast spider lunges	30
+	134	pendulum swings	30
+	134	lunges	16
+	134	walking squats	30
+	134	left quad stretch with wall	30
+	134	right quad stretch with wall	30
+	134	adductor stretch in standing	30
+	135	skipping without rope	30
+	135	squat pulses	30
+	135	straight leg fire hydrant left	10
+	135	straight leg fire hydrant right	10
+	135	glute kick back right	10
+	135	glute kick back left	10
+	135	lunges	20
+	135	pendulum swings	30
+	135	walking squats	30
+	135	fast spider lunges	30
+	135	pendulum swings	30
+	135	lunges	16
+	135	walking squats	30
+	135	left quad stretch with wall	30
+	135	right quad stretch with wall	30
+	135	adductor stretch in standing	30
+	136	skipping without rope	30
+	136	squat pulses	30
+	136	straight leg fire hydrant left	10
+	136	straight leg fire hydrant right	10
+	136	glute kick back right	10
+	136	glute kick back left	10
+	136	lunges	20
+	136	pendulum swings	30
+	136	walking squats	30
+	136	fast spider lunges	30
+	136	pendulum swings	30
+	136	lunges	16
+	136	walking squats	30
+	136	left quad stretch with wall	30
+	136	right quad stretch with wall	30
+	136	adductor stretch in standing	30
+	137	skipping without rope	30
+	137	squat pulses	30
+	137	straight leg fire hydrant left	10
+	137	straight leg fire hydrant right	10
+	137	glute kick back right	10
+	137	glute kick back left	10
+	137	lunges	20
+	137	pendulum swings	30
+	137	walking squats	30
+	137	fast spider lunges	30
+	137	pendulum swings	30
+	137	lunges	16
+	137	walking squats	30
+	137	left quad stretch with wall	30
+	137	right quad stretch with wall	30
+	137	adductor stretch in standing	30
+	138	skipping without rope	30
+	138	squat pulses	30
+	138	straight leg fire hydrant left	10
+	138	straight leg fire hydrant right	10
+	138	glute kick back right	10
+	138	glute kick back left	10
+	138	lunges	20
+	138	pendulum swings	30
+	138	walking squats	30
+	138	fast spider lunges	30
+	138	pendulum swings	30
+	138	lunges	16
+	138	walking squats	30
+	138	left quad stretch with wall	30
+	138	right quad stretch with wall	30
+	138	adductor stretch in standing	30
+	139	skipping without rope	30
+	139	squat pulses	30
+	139	straight leg fire hydrant left	10
+	139	straight leg fire hydrant right	10
+	139	glute kick back right	10
+	139	glute kick back left	10
+	139	lunges	20
+	139	pendulum swings	30
+	139	walking squats	30
+	139	fast spider lunges	30
+	139	pendulum swings	30
+	139	lunges	16
+	139	walking squats	30
+	139	left quad stretch with wall	30
+	139	right quad stretch with wall	30
+	139	adductor stretch in standing	30
+	140	skipping without rope	30
+	140	squat pulses	30
+	140	straight leg fire hydrant left	10
+	140	straight leg fire hydrant right	10
+	140	glute kick back right	10
+	140	glute kick back left	10
+	140	lunges	20
+	140	pendulum swings	30
+	140	walking squats	30
+	140	fast spider lunges	30
+	140	pendulum swings	30
+	140	lunges	16
+	140	walking squats	30
+	140	left quad stretch with wall	30
+	140	right quad stretch with wall	30
+	140	adductor stretch in standing	30
+	141	skipping without rope	30
+	141	squat pulses	30
+	141	straight leg fire hydrant left	10
+	141	straight leg fire hydrant right	10
+	141	glute kick back right	10
+	141	glute kick back left	10
+	141	lunges	20
+	141	pendulum swings	30
+	141	walking squats	30
+	141	fast spider lunges	30
+	141	pendulum swings	30
+	141	lunges	16
+	141	walking squats	30
+	141	left quad stretch with wall	30
+	141	right quad stretch with wall	30
+	141	adductor stretch in standing	30
+	142	skipping without rope	30
+	142	squat pulses	30
+	142	straight leg fire hydrant left	10
+	142	straight leg fire hydrant right	10
+	142	glute kick back right	10
+	142	glute kick back left	10
+	142	lunges	20
+	142	pendulum swings	30
+	142	walking squats	30
+	142	fast spider lunges	30
+	142	pendulum swings	30
+	142	lunges	16
+	142	walking squats	30
+	142	left quad stretch with wall	30
+	142	right quad stretch with wall	30
+	142	adductor stretch in standing	30
+	143	skipping without rope	30
+	143	squat pulses	30
+	143	straight leg fire hydrant left	10
+	143	straight leg fire hydrant right	10
+	143	glute kick back right	10
+	143	glute kick back left	10
+	143	lunges	20
+	143	pendulum swings	30
+	143	walking squats	30
+	143	fast spider lunges	30
+	143	pendulum swings	30
+	143	lunges	16
+	143	walking squats	30
+	143	left quad stretch with wall	30
+	143	right quad stretch with wall	30
+	143	adductor stretch in standing	30
+	144	skipping without rope	30
+	144	squat pulses	30
+	144	straight leg fire hydrant left	10
+	144	straight leg fire hydrant right	10
+	144	glute kick back right	10
+	144	glute kick back left	10
+	144	lunges	20
+	144	pendulum swings	30
+	144	walking squats	30
+	144	fast spider lunges	30
+	144	pendulum swings	30
+	144	lunges	16
+	144	walking squats	30
+	144	left quad stretch with wall	30
+	144	right quad stretch with wall	30
+	144	adductor stretch in standing	30
+	145	skipping without rope	30
+	145	squat pulses	30
+	145	straight leg fire hydrant left	10
+	145	straight leg fire hydrant right	10
+	145	glute kick back right	10
+	145	glute kick back left	10
+	145	lunges	20
+	145	pendulum swings	30
+	145	walking squats	30
+	145	fast spider lunges	30
+	145	pendulum swings	30
+	145	lunges	16
+	145	walking squats	30
+	145	left quad stretch with wall	30
+	145	right quad stretch with wall	30
+	145	adductor stretch in standing	30
+	146	skipping without rope	30
+	146	squat pulses	30
+	146	straight leg fire hydrant left	10
+	146	straight leg fire hydrant right	10
+	146	glute kick back right	10
+	146	glute kick back left	10
+	146	lunges	20
+	146	pendulum swings	30
+	146	walking squats	30
+	146	fast spider lunges	30
+	146	pendulum swings	30
+	146	lunges	16
+	146	walking squats	30
+	146	left quad stretch with wall	30
+	146	right quad stretch with wall	30
+	146	adductor stretch in standing	30
+	147	skipping without rope	30
+	147	squat pulses	30
+	147	straight leg fire hydrant left	10
+	147	straight leg fire hydrant right	10
+	147	glute kick back right	10
+	147	glute kick back left	10
+	147	lunges	20
+	147	pendulum swings	30
+	147	walking squats	30
+	147	fast spider lunges	30
+	147	pendulum swings	30
+	147	lunges	16
+	147	walking squats	30
+	147	left quad stretch with wall	30
+	147	right quad stretch with wall	30
+	147	adductor stretch in standing	30
+	148	skipping without rope	30
+	148	squat pulses	30
+	148	straight leg fire hydrant left	10
+	148	straight leg fire hydrant right	10
+	148	glute kick back right	10
+	148	glute kick back left	10
+	148	lunges	20
+	148	pendulum swings	30
+	148	walking squats	30
+	148	fast spider lunges	30
+	148	pendulum swings	30
+	148	lunges	16
+	148	walking squats	30
+	148	left quad stretch with wall	30
+	148	right quad stretch with wall	30
+	148	adductor stretch in standing	30
+	149	skipping without rope	30
+	149	squat pulses	30
+	149	straight leg fire hydrant left	10
+	149	straight leg fire hydrant right	10
+	149	glute kick back right	10
+	149	glute kick back left	10
+	149	lunges	20
+	149	pendulum swings	30
+	149	walking squats	30
+	149	fast spider lunges	30
+	149	pendulum swings	30
+	149	lunges	16
+	149	walking squats	30
+	149	left quad stretch with wall	30
+	149	right quad stretch with wall	30
+	149	adductor stretch in standing	30
+	150	skipping without rope	30
+	150	squat pulses	30
+	150	straight leg fire hydrant left	10
+	150	straight leg fire hydrant right	10
+	150	glute kick back right	10
+	150	glute kick back left	10
+	150	lunges	20
+	150	pendulum swings	30
+	150	walking squats	30
+	150	fast spider lunges	30
+	150	pendulum swings	30
+	150	lunges	16
+	150	walking squats	30
+	150	left quad stretch with wall	30
+	150	right quad stretch with wall	30
+	150	adductor stretch in standing	30
+	151	skipping without rope	30
+	151	squat pulses	30
+	151	straight leg fire hydrant left	10
+	151	straight leg fire hydrant right	10
+	151	glute kick back right	10
+	151	glute kick back left	10
+	151	lunges	20
+	151	pendulum swings	30
+	151	walking squats	30
+	151	fast spider lunges	30
+	151	pendulum swings	30
+	151	lunges	16
+	151	walking squats	30
+	151	left quad stretch with wall	30
+	151	right quad stretch with wall	30
+	151	adductor stretch in standing	30
+	152	skipping without rope	30
+	152	squat pulses	30
+	152	straight leg fire hydrant left	10
+	152	straight leg fire hydrant right	10
+	152	glute kick back right	10
+	152	glute kick back left	10
+	152	lunges	20
+	152	pendulum swings	30
+	152	walking squats	30
+	152	fast spider lunges	30
+	152	pendulum swings	30
+	152	lunges	16
+	152	walking squats	30
+	152	left quad stretch with wall	30
+	152	right quad stretch with wall	30
+	152	adductor stretch in standing	30
+	153	skipping without rope	30
+	153	squat pulses	30
+	153	straight leg fire hydrant left	10
+	153	straight leg fire hydrant right	10
+	153	glute kick back right	10
+	153	glute kick back left	10
+	153	lunges	20
+	153	pendulum swings	30
+	153	walking squats	30
+	153	fast spider lunges	30
+	153	pendulum swings	30
+	153	lunges	16
+	153	walking squats	30
+	153	left quad stretch with wall	30
+	153	right quad stretch with wall	30
+	153	adductor stretch in standing	30
+	154	skipping without rope	30
+	154	squat pulses	30
+	154	straight leg fire hydrant left	10
+	154	straight leg fire hydrant right	10
+	154	glute kick back right	10
+	154	glute kick back left	10
+	154	lunges	20
+	154	pendulum swings	30
+	154	walking squats	30
+	154	fast spider lunges	30
+	154	pendulum swings	30
+	154	lunges	16
+	154	walking squats	30
+	154	left quad stretch with wall	30
+	154	right quad stretch with wall	30
+	154	adductor stretch in standing	30
+	155	skipping without rope	30
+	155	squat pulses	30
+	155	straight leg fire hydrant left	10
+	155	straight leg fire hydrant right	10
+	155	glute kick back right	10
+	155	glute kick back left	10
+	155	lunges	20
+	155	pendulum swings	30
+	155	walking squats	30
+	155	fast spider lunges	30
+	155	pendulum swings	30
+	155	lunges	16
+	155	walking squats	30
+	155	left quad stretch with wall	30
+	155	right quad stretch with wall	30
+	155	adductor stretch in standing	30
+	156	skipping without rope	30
+	156	squat pulses	30
+	156	straight leg fire hydrant left	10
+	156	straight leg fire hydrant right	10
+	156	glute kick back right	10
+	156	glute kick back left	10
+	156	lunges	20
+	156	pendulum swings	30
+	156	walking squats	30
+	156	fast spider lunges	30
+	156	pendulum swings	30
+	156	lunges	16
+	156	walking squats	30
+	156	left quad stretch with wall	30
+	156	right quad stretch with wall	30
+	156	adductor stretch in standing	30
+	157	skipping without rope	30
+	157	squat pulses	30
+	157	straight leg fire hydrant left	10
+	157	straight leg fire hydrant right	10
+	157	glute kick back right	10
+	157	glute kick back left	10
+	157	lunges	20
+	157	pendulum swings	30
+	157	walking squats	30
+	157	fast spider lunges	30
+	157	pendulum swings	30
+	157	lunges	16
+	157	walking squats	30
+	157	left quad stretch with wall	30
+	157	right quad stretch with wall	30
+	157	adductor stretch in standing	30
+	158	skipping without rope	30
+	158	squat pulses	30
+	158	straight leg fire hydrant left	10
+	158	straight leg fire hydrant right	10
+	158	glute kick back right	10
+	158	glute kick back left	10
+	158	lunges	20
+	158	pendulum swings	30
+	158	walking squats	30
+	158	fast spider lunges	30
+	158	pendulum swings	30
+	158	lunges	16
+	158	walking squats	30
+	158	left quad stretch with wall	30
+	158	right quad stretch with wall	30
+	158	adductor stretch in standing	30
+	159	skipping without rope	30
+	159	squat pulses	30
+	159	straight leg fire hydrant left	10
+	159	straight leg fire hydrant right	10
+	159	glute kick back right	10
+	159	glute kick back left	10
+	159	lunges	20
+	159	pendulum swings	30
+	159	walking squats	30
+	159	fast spider lunges	30
+	159	pendulum swings	30
+	159	lunges	16
+	159	walking squats	30
+	159	left quad stretch with wall	30
+	159	right quad stretch with wall	30
+	159	adductor stretch in standing	30
+	160	skipping without rope	30
+	160	squat pulses	30
+	160	straight leg fire hydrant left	10
+	160	straight leg fire hydrant right	10
+	160	glute kick back right	10
+	160	glute kick back left	10
+	160	lunges	20
+	160	pendulum swings	30
+	160	walking squats	30
+	160	fast spider lunges	30
+	160	pendulum swings	30
+	160	lunges	16
+	160	walking squats	30
+	160	left quad stretch with wall	30
+	160	right quad stretch with wall	30
+	160	adductor stretch in standing	30
+	161	skipping without rope	30
+	161	squat pulses	30
+	161	straight leg fire hydrant left	10
+	161	straight leg fire hydrant right	10
+	161	glute kick back right	10
+	161	glute kick back left	10
+	161	lunges	20
+	161	pendulum swings	30
+	161	walking squats	30
+	161	fast spider lunges	30
+	161	pendulum swings	30
+	161	lunges	16
+	161	walking squats	30
+	161	left quad stretch with wall	30
+	161	right quad stretch with wall	30
+	161	adductor stretch in standing	30
+	162	skipping without rope	30
+	162	squat pulses	30
+	162	straight leg fire hydrant left	10
+	162	straight leg fire hydrant right	10
+	162	glute kick back right	10
+	162	glute kick back left	10
+	162	lunges	20
+	162	pendulum swings	30
+	162	walking squats	30
+	162	fast spider lunges	30
+	162	pendulum swings	30
+	162	lunges	16
+	162	walking squats	30
+	162	left quad stretch with wall	30
+	162	right quad stretch with wall	30
+	162	adductor stretch in standing	30
+	163	skipping without rope	30
+	163	squat pulses	30
+	163	straight leg fire hydrant left	10
+	163	straight leg fire hydrant right	10
+	163	glute kick back right	10
+	163	glute kick back left	10
+	163	lunges	20
+	163	pendulum swings	30
+	163	walking squats	30
+	163	fast spider lunges	30
+	163	pendulum swings	30
+	163	lunges	16
+	163	walking squats	30
+	163	left quad stretch with wall	30
+	163	right quad stretch with wall	30
+	163	adductor stretch in standing	30
+	164	skipping without rope	30
+	164	squat pulses	30
+	164	straight leg fire hydrant left	10
+	164	straight leg fire hydrant right	10
+	164	glute kick back right	10
+	164	glute kick back left	10
+	164	lunges	20
+	164	pendulum swings	30
+	164	walking squats	30
+	164	fast spider lunges	30
+	164	pendulum swings	30
+	164	lunges	16
+	164	walking squats	30
+	164	left quad stretch with wall	30
+	164	right quad stretch with wall	30
+	164	adductor stretch in standing	30
+	165	skipping without rope	30
+	165	squat pulses	30
+	165	straight leg fire hydrant left	10
+	165	straight leg fire hydrant right	10
+	165	glute kick back right	10
+	165	glute kick back left	10
+	165	lunges	20
+	165	pendulum swings	30
+	165	walking squats	30
+	165	fast spider lunges	30
+	165	pendulum swings	30
+	165	lunges	16
+	165	walking squats	30
+	165	left quad stretch with wall	30
+	165	right quad stretch with wall	30
+	165	adductor stretch in standing	30
+	166	skipping without rope	30
+	166	squat pulses	30
+	166	straight leg fire hydrant left	10
+	166	straight leg fire hydrant right	10
+	166	glute kick back right	10
+	166	glute kick back left	10
+	166	lunges	20
+	166	pendulum swings	30
+	166	walking squats	30
+	166	fast spider lunges	30
+	166	pendulum swings	30
+	166	lunges	16
+	166	walking squats	30
+	166	left quad stretch with wall	30
+	166	right quad stretch with wall	30
+	166	adductor stretch in standing	30
+	167	skipping without rope	30
+	167	squat pulses	30
+	167	straight leg fire hydrant left	10
+	167	straight leg fire hydrant right	10
+	167	glute kick back right	10
+	167	glute kick back left	10
+	167	lunges	20
+	167	pendulum swings	30
+	167	walking squats	30
+	167	fast spider lunges	30
+	167	pendulum swings	30
+	167	lunges	16
+	167	walking squats	30
+	167	left quad stretch with wall	30
+	167	right quad stretch with wall	30
+	167	adductor stretch in standing	30
+	168	skipping without rope	30
+	168	squat pulses	30
+	168	straight leg fire hydrant left	10
+	168	straight leg fire hydrant right	10
+	168	glute kick back right	10
+	168	glute kick back left	10
+	168	lunges	20
+	168	pendulum swings	30
+	168	walking squats	30
+	168	fast spider lunges	30
+	168	pendulum swings	30
+	168	lunges	16
+	168	walking squats	30
+	168	left quad stretch with wall	30
+	168	right quad stretch with wall	30
+	168	adductor stretch in standing	30
+	169	skipping without rope	30
+	169	squat pulses	30
+	169	straight leg fire hydrant left	10
+	169	straight leg fire hydrant right	10
+	169	glute kick back right	10
+	169	glute kick back left	10
+	169	lunges	20
+	169	pendulum swings	30
+	169	walking squats	30
+	169	fast spider lunges	30
+	169	pendulum swings	30
+	169	lunges	16
+	169	walking squats	30
+	169	left quad stretch with wall	30
+	169	right quad stretch with wall	30
+	169	adductor stretch in standing	30
+	170	skipping without rope	30
+	170	squat pulses	30
+	170	straight leg fire hydrant left	10
+	170	straight leg fire hydrant right	10
+	170	glute kick back right	10
+	170	glute kick back left	10
+	170	lunges	20
+	170	pendulum swings	30
+	170	walking squats	30
+	170	fast spider lunges	30
+	170	pendulum swings	30
+	170	lunges	16
+	170	walking squats	30
+	170	left quad stretch with wall	30
+	170	right quad stretch with wall	30
+	170	adductor stretch in standing	30
+	171	skipping without rope	30
+	171	squat pulses	30
+	171	straight leg fire hydrant left	10
+	171	straight leg fire hydrant right	10
+	171	glute kick back right	10
+	171	glute kick back left	10
+	171	lunges	20
+	171	pendulum swings	30
+	171	walking squats	30
+	171	fast spider lunges	30
+	171	pendulum swings	30
+	171	lunges	16
+	171	walking squats	30
+	171	left quad stretch with wall	30
+	171	right quad stretch with wall	30
+	171	adductor stretch in standing	30
+	172	skipping without rope	30
+	172	squat pulses	30
+	172	straight leg fire hydrant left	10
+	172	straight leg fire hydrant right	10
+	172	glute kick back right	10
+	172	glute kick back left	10
+	172	lunges	20
+	172	pendulum swings	30
+	172	walking squats	30
+	172	fast spider lunges	30
+	172	pendulum swings	30
+	172	lunges	16
+	172	walking squats	30
+	172	left quad stretch with wall	30
+	172	right quad stretch with wall	30
+	172	adductor stretch in standing	30
+	173	skipping without rope	30
+	173	squat pulses	30
+	173	straight leg fire hydrant left	10
+	173	straight leg fire hydrant right	10
+	173	glute kick back right	10
+	173	glute kick back left	10
+	173	lunges	20
+	173	pendulum swings	30
+	173	walking squats	30
+	173	fast spider lunges	30
+	173	pendulum swings	30
+	173	lunges	16
+	173	walking squats	30
+	173	left quad stretch with wall	30
+	173	right quad stretch with wall	30
+	173	adductor stretch in standing	30
+	174	skipping without rope	30
+	174	squat pulses	30
+	174	straight leg fire hydrant left	10
+	174	straight leg fire hydrant right	10
+	174	glute kick back right	10
+	174	glute kick back left	10
+	174	lunges	20
+	174	pendulum swings	30
+	174	walking squats	30
+	174	fast spider lunges	30
+	174	pendulum swings	30
+	174	lunges	16
+	174	walking squats	30
+	174	left quad stretch with wall	30
+	174	right quad stretch with wall	30
+	174	adductor stretch in standing	30
+	175	skipping without rope	30
+	175	squat pulses	30
+	175	straight leg fire hydrant left	10
+	175	straight leg fire hydrant right	10
+	175	glute kick back right	10
+	175	glute kick back left	10
+	175	lunges	20
+	175	pendulum swings	30
+	175	walking squats	30
+	175	fast spider lunges	30
+	175	pendulum swings	30
+	175	lunges	16
+	175	walking squats	30
+	175	left quad stretch with wall	30
+	175	right quad stretch with wall	30
+	175	adductor stretch in standing	30
+	176	skipping without rope	30
+	176	squat pulses	30
+	176	straight leg fire hydrant left	10
+	176	straight leg fire hydrant right	10
+	176	glute kick back right	10
+	176	glute kick back left	10
+	176	lunges	20
+	176	pendulum swings	30
+	176	walking squats	30
+	176	fast spider lunges	30
+	176	pendulum swings	30
+	176	lunges	16
+	176	walking squats	30
+	176	left quad stretch with wall	30
+	176	right quad stretch with wall	30
+	176	adductor stretch in standing	30
+	177	skipping without rope	30
+	177	squat pulses	30
+	177	straight leg fire hydrant left	10
+	177	straight leg fire hydrant right	10
+	177	glute kick back right	10
+	177	glute kick back left	10
+	177	lunges	20
+	177	pendulum swings	30
+	177	walking squats	30
+	177	fast spider lunges	30
+	177	pendulum swings	30
+	177	lunges	16
+	177	walking squats	30
+	177	left quad stretch with wall	30
+	177	right quad stretch with wall	30
+	177	adductor stretch in standing	30
+	178	skipping without rope	30
+	178	squat pulses	30
+	178	straight leg fire hydrant left	10
+	178	straight leg fire hydrant right	10
+	178	glute kick back right	10
+	178	glute kick back left	10
+	178	lunges	20
+	178	pendulum swings	30
+	178	walking squats	30
+	178	fast spider lunges	30
+	178	pendulum swings	30
+	178	lunges	16
+	178	walking squats	30
+	178	left quad stretch with wall	30
+	178	right quad stretch with wall	30
+	178	adductor stretch in standing	30
+	179	skipping without rope	30
+	179	squat pulses	30
+	179	straight leg fire hydrant left	10
+	179	straight leg fire hydrant right	10
+	179	glute kick back right	10
+	179	glute kick back left	10
+	179	lunges	20
+	179	pendulum swings	30
+	179	walking squats	30
+	179	fast spider lunges	30
+	179	pendulum swings	30
+	179	lunges	16
+	179	walking squats	30
+	179	left quad stretch with wall	30
+	179	right quad stretch with wall	30
+	179	adductor stretch in standing	30
