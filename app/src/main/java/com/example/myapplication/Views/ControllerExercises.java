@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,14 +13,17 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.myapplication.Models.Exercise;
+import com.example.myapplication.Models.Exercises;
+import com.example.myapplication.Models.MusicPlayer;
+import com.example.myapplication.R;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Queue;
 import java.util.concurrent.TimeUnit;
-
-import static java.lang.Math.toIntExact;
 
 public class ControllerExercises extends AppCompatActivity {
 
@@ -79,7 +82,7 @@ public class ControllerExercises extends AppCompatActivity {
             @Override
             public void run() {
                 AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-                for(int i=audioManager.getStreamVolume(AudioManager.STREAM_MUSIC); i<MusicPlayer.EXECUTE_EXERCISES_VOLUME; i++) {
+                for(int i = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC); i< MusicPlayer.EXECUTE_EXERCISES_VOLUME; i++) {
                     try {
                         TimeUnit.MILLISECONDS.sleep(100);
                     } catch (InterruptedException e) {

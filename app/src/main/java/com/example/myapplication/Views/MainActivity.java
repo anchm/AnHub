@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.AudioManager;
 import android.os.Bundle;
+
+import com.example.myapplication.Models.ChoosedPrograms;
+import com.example.myapplication.Models.DataAboutYou;
+import com.example.myapplication.Models.MusicPlayer;
+import com.example.myapplication.Models.MyDatabase;
 
 public class MainActivity extends AppCompatActivity {
 

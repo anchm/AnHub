@@ -1,8 +1,6 @@
-package com.example.myapplication;
+package com.example.myapplication.Models;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class Exercises {

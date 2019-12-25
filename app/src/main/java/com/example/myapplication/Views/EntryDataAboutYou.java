@@ -1,23 +1,20 @@
-package com.example.myapplication;
+package com.example.myapplication.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.myapplication.Models.DataAboutYou;
+import com.example.myapplication.R;
+
 public class EntryDataAboutYou extends AppCompatActivity {
 
     static final int ENTRY_WEIGHT_REQUEST = 0;
     static final int ENTRY_HEIGHT_REQUEST = 1;
-
-    TextView tvWeight;
-    TextView tvHeight;
-    TextView tvBMI;
-    Button btnGoToPrograms;
 
     DataAboutYou dataAboutYou = DataAboutYou.getInstance();
 
@@ -39,9 +36,9 @@ public class EntryDataAboutYou extends AppCompatActivity {
         else {
             setContentView(R.layout.activity_entry_data_about_you);
 
-            tvHeight = findViewById(R.id.tvHeightValue);
-            tvWeight = findViewById(R.id.tvWeightValue);
-            tvBMI = findViewById(R.id.tvBMIValue);
+            TextView tvHeight = findViewById(R.id.tvHeightValue);
+            TextView tvWeight = findViewById(R.id.tvWeightValue);
+            TextView tvBMI = findViewById(R.id.tvBMIValue);
 
             int height = dataAboutYou.getHeight();
             int weight = dataAboutYou.getWeight();
@@ -57,7 +54,7 @@ public class EntryDataAboutYou extends AppCompatActivity {
             tvWeight.setText(Integer.toString(weight));
             tvBMI.setText(Integer.toString((int)BMI));
 
-            btnGoToPrograms = findViewById(R.id.btnGoToPrograms);
+            Button btnGoToPrograms = findViewById(R.id.btnGoToPrograms);
 
             final Intent menuIntent = new Intent(this, Menu.class);
 

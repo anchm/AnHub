@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,9 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.example.myapplication.Models.Exercises;
+import com.example.myapplication.Models.MyDatabase;
+import com.example.myapplication.R;
 import com.github.mikephil.charting.data.Entry;
 
 import java.util.ArrayList;

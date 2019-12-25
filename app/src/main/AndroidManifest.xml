@@ -10,23 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         >
-        <activity android:name=".ViewSettings"></activity>
-        <activity android:name=".Menu" />
-        <activity android:name=".ViewDataAboutYou" />
-        <activity android:name=".ViewHistory" />
-        <activity android:name=".ViewReportProgram" />
-        <activity android:name=".ViewReportExercises" />
-        <activity android:name=".ControllerExercises" />
-        <activity android:name=".ExecuteExercises" />
-        <activity android:name=".ViewExercisesForDay" />
-        <activity android:name=".ViewDaysPrograms" />
-        <activity android:name=".ViewChoosedPrograms" />
-        <activity android:name=".EntryHeight" />
-        <activity android:name=".EntryWeight" />
-        <activity android:name=".EntryDataAboutYou" />
-        <activity android:name=".ChooseLvlTraining" />
-        <activity android:name=".ChooseTrainingPrograms" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Views.ViewSettings"></activity>
+        <activity android:name=".Views.Menu" />
+        <activity android:name=".Views.ViewDataAboutYou" />
+        <activity android:name=".Views.ViewHistory" />
+        <activity android:name=".Views.ViewReportProgram" />
+        <activity android:name=".Views.ViewReportExercises" />
+        <activity android:name=".Views.ControllerExercises" />
+        <activity android:name=".Views.ExecuteExercises" />
+        <activity android:name=".Views.ViewExercisesForDay" />
+        <activity android:name=".Views.ViewDaysPrograms" />
+        <activity android:name=".Views.ViewChoosedPrograms" />
+        <activity android:name=".Views.EntryHeight" />
+        <activity android:name=".Views.EntryWeight" />
+        <activity android:name=".Views.EntryDataAboutYou" />
+        <activity android:name=".Views.ChooseLvlTraining" />
+        <activity android:name=".Views.ChooseTrainingPrograms" />
+        <activity android:name=".Views.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

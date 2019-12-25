@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,15 +20,15 @@ public class ChoosedPrograms {
         return INSTANCE;
     }
 
-    void setLvlPrograms(String program, List<String> lvls){
+    public void setLvlPrograms(String program, List<String> lvls){
         programs.put(program, lvls);
     }
 
-    HashMap<String, List<String>> getPrograms(){
+    public HashMap<String, List<String>> getPrograms(){
         return programs;
     }
 
-    void setProgram(String program, String lvl){
+    public void setProgram(String program, String lvl){
         List<String> lvls = programs.get(program);
         if (lvls == null) {
             lvls = new ArrayList<>();
@@ -37,18 +37,18 @@ public class ChoosedPrograms {
         programs.put(program,lvls);
     }
 
-    List<String> getLvls(String program){
+    public List<String> getLvls(String program){
         return programs.get(program);
     }
 
-    void clearProgram(String program){
+    public void clearProgram(String program){
         List<String> lvls = programs.get(program);
         if(lvls!=null){
             lvls.clear();
         }
     }
 
-    boolean isEmpty(){
+    public boolean isEmpty(){
         return programs.isEmpty();
     }
 }

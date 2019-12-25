@@ -1,15 +1,14 @@
-package com.example.myapplication;
+package com.example.myapplication.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.io.IOException;
+import com.example.myapplication.Models.ChoosedPrograms;
+import com.example.myapplication.R;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

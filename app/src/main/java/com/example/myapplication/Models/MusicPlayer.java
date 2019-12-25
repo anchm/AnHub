@@ -1,12 +1,9 @@
-package com.example.myapplication;
+package com.example.myapplication.Models;
 
-import android.app.Service;
 import android.content.Context;
-import android.content.Intent;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.os.AsyncTask;
-import android.os.IBinder;
+
+import com.example.myapplication.R;
 
 public class MusicPlayer{
 
@@ -14,8 +11,8 @@ public class MusicPlayer{
 
     private static MusicPlayer INSTANCE;
 
-    static final int BACKGROUND_VOLUME = 1;
-    static final int EXECUTE_EXERCISES_VOLUME = 30;
+    public static final int BACKGROUND_VOLUME = 1;
+    public static final int EXECUTE_EXERCISES_VOLUME = 30;
 
     private MusicPlayer(Context context){
         mPlayer= MediaPlayer.create(context, R.raw.music);

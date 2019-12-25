@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Models;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -15,7 +15,7 @@ public class Settings {
 
     private static final String FILE_NAME_SETTINGS = "settings";
 
-    private Settings(Context context) {
+    public Settings(Context context) {
         spSettings = context.getSharedPreferences(FILE_NAME_SETTINGS, MODE_PRIVATE);
         language = spSettings.getString("language", "English");
         volume = spSettings.getInt("volume", MusicPlayer.BACKGROUND_VOLUME);

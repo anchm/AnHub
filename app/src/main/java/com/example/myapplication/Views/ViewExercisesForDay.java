@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,9 +15,13 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.ProgressBar;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
+
+import com.example.myapplication.Models.Exercise;
+import com.example.myapplication.Models.Exercises;
+import com.example.myapplication.Models.MyDatabase;
+import com.example.myapplication.R;
+import com.example.myapplication.Views.ControllerExercises;
 
 import java.io.IOException;
 import java.io.InputStream;

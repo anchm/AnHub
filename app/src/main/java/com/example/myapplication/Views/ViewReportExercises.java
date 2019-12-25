@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.myapplication.Models.Exercises;
+import com.example.myapplication.Models.MusicPlayer;
+import com.example.myapplication.Models.MyDatabase;
+import com.example.myapplication.R;
 
 import static java.lang.Integer.parseInt;
 

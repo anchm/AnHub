@@ -1,11 +1,11 @@
-package com.example.myapplication;
+package com.example.myapplication.Views;
 
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TabHost;
-import android.widget.TabWidget;
+
+import com.example.myapplication.R;
 
 public class Menu extends TabActivity {
 
