@@ -1,9 +1,11 @@
 package com.example.myapplication.Views;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Build;
 import android.os.Bundle;
 
 import android.view.Gravity;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.myapplication.Models.ChoosedPrograms;
 import com.example.myapplication.Models.MyDatabase;
+import com.example.myapplication.Models.Settings;
 import com.example.myapplication.R;
 
 import java.util.HashMap;
@@ -25,6 +28,7 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
 
     private String act;
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +50,23 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
             }
         };
         btnWaist.setOnClickListener(oclBtnWaistAndLegs);
-        btnLegs.setOnClickListener(oclBtnWaistAndLegs);
+
+        final Intent viewAdvertisingIntent = new Intent(this, Advertising.class);
+
+        if(Settings.getInstance(this).getIsViewAdvertising()){
+            btnLegs.setOnClickListener(oclBtnWaistAndLegs);
+            btnLegs.setBackground(getResources().getDrawable(R.drawable.button_choose_program_background));
+        }
+        else{
+            View.OnClickListener oclBtnViewAdvertising = new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(viewAdvertisingIntent);
+                }
+            };
+            btnLegs.setOnClickListener(oclBtnViewAdvertising);
+            btnLegs.setBackground(getResources().getDrawable(R.drawable.button_choose_program_background_closed));
+        }
 
 
         View.OnClickListener oclBtnComplete = new View.OnClickListener() {

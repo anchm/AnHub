@@ -10,6 +10,7 @@ public class Settings {
 
     private String language;
     private int volume;
+    private boolean isViewAdvertising;
 
     private SharedPreferences spSettings;
 
@@ -19,6 +20,7 @@ public class Settings {
         spSettings = context.getSharedPreferences(FILE_NAME_SETTINGS, MODE_PRIVATE);
         language = spSettings.getString("language", "English");
         volume = spSettings.getInt("volume", MusicPlayer.BACKGROUND_VOLUME);
+        isViewAdvertising = spSettings.getBoolean("isViewAdvertising", false);
     }
 
     public static Settings getInstance(Context context) {
@@ -47,6 +49,17 @@ public class Settings {
         this.volume = volume;
         SharedPreferences.Editor ed = spSettings.edit();
         ed.putInt("volume", volume);
+        ed.apply();
+    }
+
+    public boolean getIsViewAdvertising() {
+        return isViewAdvertising;
+    }
+
+    public void setViewAdvertising(boolean isViewAdvertising) {
+        this.isViewAdvertising = isViewAdvertising;
+        SharedPreferences.Editor ed = spSettings.edit();
+        ed.putBoolean("isViewAdvertising", isViewAdvertising);
         ed.apply();
     }
 }
