@@ -3,13 +3,13 @@
     package="com.example.myapplication">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Views.Advertising"></activity>
+        <activity android:name=".Views.Advertising" />
         <activity android:name=".Views.ViewSettings" />
         <activity android:name=".Views.Menu" />
         <activity android:name=".Views.ViewDataAboutYou" />
