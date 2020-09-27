@@ -52,6 +52,7 @@ public class ChooseTrainingPrograms extends AppCompatActivity {
         btnWaist.setOnClickListener(oclBtnWaistAndLegs);
 
         final Intent viewAdvertisingIntent = new Intent(this, Advertising.class);
+        viewAdvertisingIntent.putExtra("act", act);
 
         if(Settings.getInstance(this).getIsViewAdvertising()){
             btnLegs.setOnClickListener(oclBtnWaistAndLegs);

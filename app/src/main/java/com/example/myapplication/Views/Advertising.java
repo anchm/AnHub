@@ -23,6 +23,8 @@ public class Advertising extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advertising);
 
+        String act = getIntent().getStringExtra("act");
+
         ImageView imageView = findViewById(R.id.advertising_image_view);
         InputStream inputStream = null;
         try {
@@ -34,6 +36,7 @@ public class Advertising extends AppCompatActivity {
         imageView.setImageDrawable(d);
 
         final Intent chooseTrainingProgramsIntent = new Intent(this, ChooseTrainingPrograms.class);
+        chooseTrainingProgramsIntent.putExtra("act", act);
 
         final Settings settings = Settings.getInstance(this);
 
